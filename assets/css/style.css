@@ -1,6 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+}*
+
+.page {
+    display: flex;
 }
 
 .nav-bar  {
@@ -9,8 +13,38 @@
     background-color: #1E1F22;
 }
 
+.padding-nav {
+    height: 12px;
+}
+
+.nav-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.category-img {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 6px 0px 6px 0px;
+}
+
+.category {
+    width: 80%;
+}
+
 .sidebar {
     width: 240px;
     height: 100vh;
     background-color: #2B2D31;
+}
+
+.content {
+    width: 80%;
+    height: 100vh;
+    background-color: #313338;
 }
