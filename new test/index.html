@@ -10,10 +10,10 @@
   </head>
   <body>
     <div class="servers">
-      <div class="logo">
+      <div class="logo" id="btn_one">
         <img src="./assets/img/logo.jpg" alt="Discord" />
       </div>
-      <div class="server-logo">
+      <div class="server-logo"  id="btn_two">
         <img src="./assets/img/logo.jpg" alt="server" />
       </div>
 
@@ -27,37 +27,62 @@
       <div class="sidebar__top">
         <!-- <input type="text" placeholder="Find or start a conversation" /> -->
       </div>
-      <div class="sidebar__users">
-        <div class="sidebar__usersHeader">
+
+
+      <div id="menu_one" class="sidebar__users">
+        <!-- <div class="sidebar__usersHeader">
           <div class="sidebar__header">
             <h4>Direct messages</h4>
           </div>
-          <!-- <i class="fas fa-plus sidebar__addUser"></i> -->
-        </div>
+          <i class="fas fa-plus sidebar__addUser"></i>
+        </div> -->
+        1
         <div>
-          <div class="sidebar__user">
+
+          <div class="sidebar__user" id="home_icon">
             <div class="sidebar__user_div">
               <span class="status"></span>
               <img src="./assets/img/logo.jpg" alt="avatar" />
             </div>
-            <h4>????????????</h4>
+            <h4>Accueil</h4>
           </div>
-          <!-- <div class="sidebar__user">
+
+          <div class="sidebar__user" id="profile_icon">
             <div class="sidebar__user_div">
               <span class="status"></span>
               <img src="./assets/img/logo.jpg" alt="avatar" />
             </div>
-            <h4>????????????</h4>
+            <h4>Profil</h4>
           </div>
-          <div class="sidebar__user">
-            <div class="sidebar__user_div">
-              <span class="status"></span>
-              <img src="./assets/img/logo.jpg" alt="avatar" />
-            </div>
-            <h4>????????????</h4>
-          </div> -->
+
         </div>
       </div>
+
+
+      <div id="menu_two" class="sidebar__users">
+        2
+        <div>
+
+          <div class="sidebar__user" id="home_icon">
+            <div class="sidebar__user_div">
+              <span class="status"></span>
+              <img src="./assets/img/logo.jpg" alt="avatar" />
+            </div>
+            <h4>Accueil</h4>
+          </div>
+
+          <div class="sidebar__user" id="profile_icon">
+            <div class="sidebar__user_div">
+              <span class="status"></span>
+              <img src="./assets/img/logo.jpg" alt="avatar" />
+            </div>
+            <h4>Profil</h4>
+          </div>
+
+        </div>
+      </div>
+
+
       <div class="sidebar__profile">
         <div>
           <span class="status"></span>
@@ -88,19 +113,35 @@
         </div>
       </div>
 
-      <div class="chat__messages">
+      <div class="chat__messages" id="section_one">
 
-        <section v-if="home" class="home content">
-          <div class="home-profile">
-            <img src=".\assets\img\pp.webp" alt="photo de profile">
-            <div class="home-profile-info">
-              <h1>Marius Hazart</h1>
-              <hr class="hr">
-              <h2>1ère année de bachelore a La Manu</h2>
+          <section id="home_content" class="home content">
+            <div class="home-profile">
+              <img src=".\assets\img\pp.webp" alt="photo de profile">
+              <div class="home-profile-info">
+                <h1>Marius Hazart</h1>
+                <hr class="hr">
+                <h2>1ère année de bachelore a La Manu</h2>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+  
+          <section id="profile_content" class="home content">
+            
+            
+          </section>
 
+      </div>
+
+      <div class="chat__messages" id="section_two">
+
+      </div>
+
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
 
           <!-- <div class="message">
               <img src="./assets/img/logo.jpg" alt="avatar">
@@ -109,9 +150,3 @@
                   <p>Hello</p>
               </div>
           </div> -->
-      </div>
-    </div>
-
-    <script src="./assets/js/script.js"></script>
-  </body>
-</html>
