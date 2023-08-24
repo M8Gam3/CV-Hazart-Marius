@@ -55,6 +55,9 @@ const btn_one = document.querySelector("#btn_one")
         const profile_icon = document.querySelector("#profile_icon")
         const profile_content = document.querySelector("#profile_content")
 
+        const skills_icon = document.querySelector("#skills_icon")
+        const skills_content = document.querySelector("#skills_content")
+
 
 const btn_two = document.querySelector("#btn_two")
     const menu_two = document.querySelector("#menu_two")
@@ -63,10 +66,10 @@ const btn_two = document.querySelector("#btn_two")
 
 
 profile_content.classList.add("invisible");
-
-section_two.classList.add("invisible");
+skills_content.classList.add("invisible");
 
 menu_two.classList.add("invisible");
+section_two.classList.add("invisible");
 
 btn_one.addEventListener("click", function(){
     section_two.classList.add("invisible");
@@ -77,10 +80,17 @@ btn_one.addEventListener("click", function(){
     home_icon.addEventListener("click", function(){
         profile_content.classList.add("invisible");
         home_content.classList.remove("invisible");
+        skills_content.classList.add("invisible");
     })
     profile_icon.addEventListener("click", function(){
         home_content.classList.add("invisible");
         profile_content.classList.remove("invisible");
+        skills_content.classList.add("invisible");
+    })
+    skills_icon.addEventListener("click", function(){
+        home_content.classList.add("invisible");
+        profile_content.classList.add("invisible");
+        skills_content.classList.remove("invisible");
     })
 
 btn_two.addEventListener("click", function(){
