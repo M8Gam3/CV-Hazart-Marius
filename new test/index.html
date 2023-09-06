@@ -4,164 +4,229 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Discord</title>
+    <title>CV-Marius HAZART</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="https://kit.fontawesome.com/222cea3eed.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
-    <div class="servers">
-      <div class="logo" id="btn_one">
-        <img src="./assets/img/logo.jpg" alt="Discord" />
-      </div>
-      <div class="server-logo"  id="btn_two">
-        <span class="message__count">7</span>
-        <img src="./assets/img/logo.jpg" alt="server" />
-      </div>
+    <main id="app">
+      <div class="servers">
+        <div v-on:click="navOne" class="server-logo logo" id="btn_one">
+          <img class="img-logo" src="./assets/img/logo.jpg" alt="Discord"/>
+        </div>
+        <div v-on:click="navTwo" class="server-logo" id="btn_two">
+          <span class="message__count">3</span>
+          <img class="img-logo" src="./assets/img/logo.jpg" alt="server"/>
+        </div>
 
-      <!-- <div class="server-logo">
-        <span class="message__count">25</span>
-        <img src="./assets/img/logo.jpg" alt="server" />
-      </div> -->
-    </div>
-
-    <div class="sidebar">
-      <div class="sidebar__top">
-        <!-- <input type="text" placeholder="Find or start a conversation" /> -->
-      </div>
-
-
-      <div id="menu_one" class="sidebar__users">
-        <!-- <div class="sidebar__usersHeader">
-          <div class="sidebar__header">
-            <h4>Direct messages</h4>
-          </div>
-          <i class="fas fa-plus sidebar__addUser"></i>
+        <!-- <div class="server-logo">
+          <span class="message__count">25</span>
+          <img class="img-logo" src="./assets/img/logo.jpg" alt="server" />
         </div> -->
-        1
-        <div>
-
-          <div class="sidebar__user" id="home_icon">
-            <div class="sidebar__user_div">
-              <span class="status"></span>
-              <img src="./assets/img/logo.jpg" alt="avatar" />
-            </div>
-            <h4>Accueil</h4>
-          </div>
-
-          <div class="sidebar__user" id="profile_icon">
-            <div class="sidebar__user_div">
-              <span class="status"></span>
-              <img src="./assets/img/logo.jpg" alt="avatar" />
-            </div>
-            <h4>Profil</h4>
-          </div>
-
-          <div class="sidebar__user" id="skills_icon">
-            <div class="sidebar__user_div">
-              <span class="status"></span>
-              <img src="./assets/img/logo.jpg" alt="avatar" />
-            </div>
-            <h4>Compétences</h4>
-          </div>
-
-        </div>
       </div>
 
+      <div class="sidebar">
+        <div class="sidebar__top">
+          <h3 v-if="section_one">Présentation</h3>
+          <h3 v-else-if="section_two">Portfolio</h3>
+          <!-- <input type="text" placeholder="Find or start a conversation" /> -->
+        </div>
 
-      <div id="menu_two" class="sidebar__users">
-        2
-        <div>
 
-          <div class="sidebar__user" id="home_icon">
-            <div class="sidebar__user_div">
-              <span class="status"></span>
-              <img src="./assets/img/logo.jpg" alt="avatar" />
+        <div v-if="section_one" id="menu_one" class="sidebar__users">
+          <!-- <div class="sidebar__usersHeader">
+            <div class="sidebar__header">
+              <h4>Direct messages</h4>
             </div>
-            <h4>Accueil</h4>
-          </div>
+            <i class="fas fa-plus sidebar__addUser"></i>
+          </div> -->
+          <div>
 
-          <div class="sidebar__user" id="profile_icon">
-            <div class="sidebar__user_div">
-              <span class="status"></span>
-              <img src="./assets/img/logo.jpg" alt="avatar" />
-            </div>
-            <h4>Profil</h4>
-          </div>
-
-        </div>
-      </div>
-
-
-      <div class="sidebar__profile">
-        <div>
-          <span class="status"></span>
-          <img src="./assets/img/logo.jpg" alt="avatar" />
-        </div>
-        <div class="sidebar__profileInfo">
-          <h3>Marius Hazart</h3>
-          <p>marius.hazart@gmail.com</p>
-        </div>
-        <div class="sidebar__profileIcons">
-          <!-- <i class="fas fa-microphone"></i>
-          <i class="fas fa-headset"></i>
-          <i class="fas fa-cog"></i> -->
-        </div>
-      </div>
-    </div>
-
-    <div class="chat">
-      <div>
-        <div class="chatHeader">
-          <div class="chatHeader__left">
-            <span class="chatHeader__Dm"> </span>
-            <h3>????????????</h3>
-          </div>
-          <div class="chatHeader__right">
-            <i class="fas fa-question-circle fa-lg"></i>
-          </div>
-        </div>
-      </div>
-
-      <div class="chat__messages" id="section_one">
-
-          <section id="home_content" class="home content">
-            <div class="home-profile">
-              <img src=".\assets\img\pp.jpg" alt="photo de profile">
-              <div class="home-profile-info">
-                <h1>Marius Hazart</h1>
-                <hr class="hr">
-                <h2>1ère année de bachelore a La Manu</h2>
+            <div v-on:click="navHome" class="sidebar__user" id="home_icon">
+              <div class="sidebar__user_div">
+                <span class="status"></span>
+                <img class="img-logo" src="./assets/img/logo.jpg" alt="avatar" />
               </div>
+              <h4>Accueil</h4>
             </div>
-          </section>
-  
-          <section id="profile_content" class="home content">
-            profile
-            
-          </section>
 
-          <section id="skills_content" class="home content">
-            skills
-            
-          </section>
+            <div v-on:click="navProfil" class="sidebar__user" id="profile_icon">
+              <div class="sidebar__user_div">
+                <span class="status"></span>
+                <img class="img-logo" src="./assets/img/logo.jpg" alt="avatar" />
+              </div>
+              <h4>Profil</h4>
+            </div>
 
+            <div v-on:click="navSkills" class="sidebar__user" id="skills_icon">
+              <div class="sidebar__user_div">
+                <span class="status"></span>
+                <img class="img-logo" src="./assets/img/logo.jpg" alt="avatar" />
+              </div>
+              <h4>Compétences</h4>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div v-else-if="section_two" id="menu_two" class="sidebar__users">
+          <div>
+
+            <div v-on:click="navDistrict" class="sidebar__user" id="home_icon">
+              <div class="sidebar__user_div">
+                <span class="status"></span>
+                <img class="img-logo" src="./assets/img/logo.jpg" alt="avatar" />
+              </div>
+              <h4>District Noir Python</h4>
+            </div>
+
+            <div v-on:click="navAddressage" class="sidebar__user" id="home_icon">
+              <div class="sidebar__user_div">
+                <span class="status"></span>
+                <img class="img-logo" src="./assets/img/logo.jpg" alt="avatar" />
+              </div>
+              <h4>Addressage Python</h4>
+            </div>
+
+            <div v-on:click="navShifumi" class="sidebar__user" id="home_icon">
+              <div class="sidebar__user_div">
+                <span class="status"></span>
+                <img class="img-logo" src="./assets/img/logo.jpg" alt="avatar" />
+              </div>
+              <h4>Shifumi JavaScript</h4>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="sidebar__profile">
+          <div>
+            <span class="status"></span>
+            <img class="img-logo" src="./assets/img/logo.jpg" alt="avatar" />
+          </div>
+          <div class="sidebar__profileInfo">
+            <h3>Marius Hazart</h3>
+            <p>marius.hazart@gmail.com</p>
+          </div>
+          <div class="sidebar__profileIcons">
+            <!-- <i class="fas fa-microphone"></i>
+            <i class="fas fa-headset"></i>
+            <i class="fas fa-cog"></i> -->
+          </div>
+        </div>
       </div>
 
-      <div class="chat__messages" id="section_two">
-        2
+      <div class="chat">
+        <div>
+          <div class="chatHeader">
+            <div class="chatHeader__left">
+              <span class="chatHeader__Dm"> </span>
+              <div v-if="section_one">
+                <h3 v-if="home">Accueil</h3>
+                <h3 v-else-if="profil">Profile</h3>
+                <h3 v-else-if="skills">Compétences</h3>
+              </div>
+              <div v-else-if="section_two">
+                <h3 v-if="district">District Noir Python</h3>
+                <h3 v-else-if="addressage">Addressage Python</h3>
+                <h3 v-else-if="shifumi">Shifumi JavaScript</h3>
+              </div>
+
+            </div>
+            <div class="chatHeader__right">
+              <i class="fas fa-question-circle fa-lg"></i>
+              <!-- <img classe="circle" src="./assets/img/france.png" alt="fr language">
+              <img classe="circle" src="./assets/img/uk.png" alt="en language"> -->
+            </div>
+          </div>
+        </div>
+
+        <div v-if="section_one" class="chat__messages" id="section_one">
+
+            <section v-if="home" id="home_content" class="home content">
+              <div class="home-profile">
+                <img src=".\assets\img\pp.jpg" alt="photo de profile">
+                <div class="home-profile-info">
+                  <h1>Marius Hazart</h1>
+                  <hr class="hr">
+                  <h2>1ère année de bachelore a La Manu</h2>
+                </div>
+              </div>
+            </section>
+    
+            <section v-else-if="profil" id="profile_content" class="home content">
+              profile
+              
+            </section>
+
+            <section v-else-if="skills" id="skills_content" class="skills content">
+              <div class="skills-h2">
+                <div class="skills-title-div"><h2 class="skills-title">Skills</h2></div>
+                <div class="skills-desc"><p class="skills-desc-p">Les niveaux représentés sont affiliés a mon niveau de compréhension et développement dans chaques domaines plutôt que mon niveau de compétences</p></div>
+              </div>
+              <article class="skills-article">
+                <div v-for="(object, category) in skillsList" class="skill-div" v-bind:class="category">
+                  <h3 class="skills-category"> {{category}} </h3>
+                  <div v-for="item in object" class="skills-items">
+                    <object-category-skills v-bind:name="item.name" v-bind:level="item.level" v-bind:progresscolor="progressColor"></object-category-skills>
+                  </div>
+                </div>
+              </article>
+            </section>
+
+        </div>
+
+        <div v-else-if="section_two" class="chat__messages" id="section_two">
+          <section v-if="district" id="district_content" class="district content">
+            <chat-content>
+              <content-block1>
+                <div class="message-img-div">
+                  <img class="message-img" src="./assets/img/logo.jpg" alt="">
+                </div>
+              </content-block1>
+            </chat-content>
+          </section>
+
+          <section v-else-if="addressage" id="addressage_content" class="addressage content">
+            <chat-content>
+              
+            </chat-content>
+          </section>
+
+          <section v-else-if="shifumi" id="shifumi_content" class="shifumi content">
+            <chat-content>
+              
+            </chat-content>
+          </section>
+          
+          
+          
+        </div>
+
+
       </div>
-
-
-    </div>
-
-    <script src="./assets/js/script.js"></script>
+    </main>
   </body>
 </html>
 
           <!-- <div class="message">
-              <img src="./assets/img/logo.jpg" alt="avatar">
+              <img class="img-logo" src="./assets/img/logo.jpg" alt="avatar">
               <div class="message__info">
                   <h4>ManInBlack <span class="message__timestamp">04/28/2022</span></h4>
                   <p>Hello</p>
               </div>
           </div> -->
+
+<!-- <div v-if="">
+  <div v-if=""></div>
+  <div v-else-if=""></div>
+  <div v-else></div>
+</div>
+<div v-else>
+  <div v-if=""></div>
+  <div v-else></div>
+</div> -->

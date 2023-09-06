@@ -3,13 +3,13 @@
     padding: 0;
 }
 
-body {
+main {
     display: flex;
     font-family: sans-serif;
     overflow: hidden;
 }
 
-img {
+.img-logo {
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -28,15 +28,15 @@ img {
     width: 70px;
 }
 
-.logo > img {
+/* .logo > img {
     height: 45px;
     width: 50px;
     border-radius: 30%;
     cursor: pointer;
     border: none;
-}
+} */
 
-.logo::before {
+/* .logo::before {
     content: "";
     height: 2px;
     width: 35px;
@@ -44,9 +44,9 @@ img {
     top: 9%;
     left: 25%;
     background-color: #353a3f;
-}
+} */
 
-.logo::after {
+/* .logo::after {
     content: "";
     height: 35px;
     width: 3px;
@@ -55,7 +55,7 @@ img {
     left: 0%;
     background-color: #fff;
     border-radius: 2px;
-}
+} */
 
 .server-logo {
     position: relative;
@@ -71,7 +71,7 @@ img {
     transition: 0.3s ease-in-out;
 }
 
-.server-logo::after {
+.logo::after {
     content: "";
     height: 10px;
     width: 10px;
@@ -315,6 +315,7 @@ img {
 .chat__messages {
     flex: 1;
     overflow: scroll;
+    padding: 15px;
 }
 
 .message {
@@ -475,6 +476,170 @@ img {
 }
 
 
-.invisible {
-    display: none;
+
+/* Skills */
+
+progress {
+    background-color: rgba(0, 0, 0, 0);
 }
+
+progress[value]::-webkit-progress-bar {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+progress[value]::-webkit-progress-value {
+    border-radius: 10px;
+}
+
+.progress-red::-webkit-progress-value { 
+    background: #DE0000; 
+}
+.progress-orange::-webkit-progress-value { 
+    background: #F46700; 
+}
+.progress-yellow::-webkit-progress-value { 
+    background: #C6D611; 
+}
+.progress-green::-webkit-progress-value { 
+    background: #00CB08; 
+}
+.progress-succes::-webkit-progress-value { 
+    background: #04980A; 
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    height: 75%;
+    color: #DBDED6;
+    justify-content: space-around;;
+    flex-direction: column;
+}
+
+.skills-items {
+    padding-bottom: 8px;
+}
+
+.skills-category {
+    padding-bottom: 10px;
+}
+
+.skills-h2 {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills-article {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skills-title {
+    padding-bottom: 10px;
+}
+
+.skills-button {
+    margin-right: 4vw;
+    background-color: #2F3136;
+    border: none;
+    color: white;
+    border-radius: 10%;
+    height: 50%;
+    padding: 3px 32px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.skills-title-div {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-desc {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.skills-desc-p {
+    width: 60vw;
+    text-align: center;
+}
+
+
+/* /################## */
+
+/* .section-two {
+    margin: 15px;
+} */
+
+
+
+/* ############################################## */
+
+.chat-content { 
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.content-block0 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+}
+
+.content-block1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 200px;
+}
+
+.content-block2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 200px;
+}
+
+.content-block3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    height: 200px;
+}
+
+
+.message-img-div {
+    border-radius: 2.5%;
+    max-height: 300px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.message-img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%; 
+}
+
+/* .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
