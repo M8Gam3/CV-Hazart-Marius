@@ -614,8 +614,16 @@ progress[value]::-webkit-progress-value {
     height: 300px;
 }
 
+.content-block-portfolio {
+    height: 62vh;
+}
+
 .content-block-50 {
     height: 50px;
+}
+
+.content-block-30 {
+    height: 30px;
 }
 
 .content-block3 {
@@ -652,7 +660,7 @@ progress[value]::-webkit-progress-value {
     width: 30vw;
     height: 30vh;
     object-fit: cover; 
-    border-radius: 50%;
+    border-radius: 5px;
     overflow: hidden;
 }
 
@@ -682,7 +690,7 @@ progress[value]::-webkit-progress-value {
 
 .portfolio-item {
     background-size: cover;
-    width: 50%;
+    width: 100%;
     height: 60vh;
     margin-block: 2vh;
     border-radius: 5px;
@@ -721,11 +729,37 @@ progress[value]::-webkit-progress-value {
 }
 
 
-.addressage {
+.addressage-python {
     background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url(../img/image-test.webp);
     background-size: cover;
 }
 
-.width-50 {
+.shifumi-js {
+    background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url(../img/image-test.webp);
+    background-size: cover;
+}
+
+.disctrict-noir-python {
+    background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url(../img/image-test.webp);
+    background-size: cover;
+}
+
+.popchill {
+    background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url(../img/image-test.webp);
+    background-size: cover;
+}
+
+.lcai {
+    background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url(../img/image-test.webp);
+    background-size: cover;
+}
+
+.width-100 {
+    padding: 2%;
     width: 100%;
+}
+
+.p-profil {
+    display: flex;
+    flex-direction: column;
 }
