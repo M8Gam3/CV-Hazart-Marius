@@ -84,9 +84,9 @@ var app = new Vue({
         skills: false,
 
         section_two: false,
-        district: true,
-        addressage: false,
-        shifumi: false,
+        branly: true,
+        laManu1: false,
+        laManu2: false,
 
         skillsList : {
             Languages: [
@@ -197,7 +197,7 @@ var app = new Vue({
             design: [
                 {
                     name: 'Figma',
-                    level: 2,
+                    level: 2.5,
                     more:[
                         {
                             name: 'UI',
@@ -215,7 +215,7 @@ var app = new Vue({
                 },
                 {
                     name: 'Adobe XD',
-                    level: 1,
+                    level: 2,
                     more:[
                         {
                             name: 'UI',
@@ -271,7 +271,7 @@ var app = new Vue({
             Autre: [
                 {
                     name: 'Git',
-                    level: 3,
+                    level: 3.5,
                     more:[
                         {
                             name: 'Serveur GitHub',
@@ -353,19 +353,19 @@ var app = new Vue({
             this.section_two = true;
         },
         navDistrict: function () {
-            this.district = true;
-            this.addressage = false;
-            this.shifumi = false;
+            this.branly = true;
+            this.laManu1 = false;
+            this.laManu2 = false;
         },
         navAddressage: function () {
-            this.district = false;
-            this.addressage = true;
-            this.shifumi = false;
+            this.branly = false;
+            this.laManu1 = true;
+            this.laManu2 = false;
         },
         navShifumi: function () {
-            this.district = false;
-            this.addressage = false;
-            this.shifumi = true;
+            this.branly = false;
+            this.laManu1 = false;
+            this.laManu2 = true;
         },
 
 

@@ -80,7 +80,7 @@
                 <span class="status"></span>
                 <img class="img-logo" src="./assets/img/image-test.webp" alt="avatar" />
               </div>
-              <h4>District Noir Python</h4>
+              <h4>Projets en terminale</h4>
             </div>
 
             <div v-on:click="navAddressage" class="sidebar__user" id="home_icon">
@@ -88,7 +88,7 @@
                 <span class="status"></span>
                 <img class="img-logo" src="./assets/img/image-test.webp" alt="avatar" />
               </div>
-              <h4>Addressage Python</h4>
+              <h4>1ère année a LA MANU</h4>
             </div>
 
             <div v-on:click="navShifumi" class="sidebar__user" id="home_icon">
@@ -96,7 +96,7 @@
                 <span class="status"></span>
                 <img class="img-logo" src="./assets/img/image-test.webp" alt="avatar" />
               </div>
-              <h4>Shifumi JavaScript</h4>
+              <h4>2ème année a LA MANU</h4>
             </div>
 
           </div>
@@ -131,9 +131,9 @@
                 <h3 v-else-if="skills">Compétences</h3>
               </div>
               <div v-else-if="section_two">
-                <h3 v-if="district">District Noir Python</h3>
-                <h3 v-else-if="addressage">Addressage Python</h3>
-                <h3 v-else-if="shifumi">Shifumi JavaScript</h3>
+                <h3 v-if="branly">Projets en terminale</h3>
+                <h3 v-else-if="laManu1">1ère année a LA MANU</h3>
+                <h3 v-else-if="laManu2">2ème année a LA MANU</h3>
               </div>
 
             </div>
@@ -159,7 +159,17 @@
             </section>
     
             <section v-else-if="profil" id="profile_content" class="home content">
-              profile
+              <chat-content>
+                <content-block0>
+                  Profile
+                </content-block0>
+                <content-block3>
+                  <img class="message-img circle2" src="./assets/img/image-test.webp" alt="">
+                </content-block3>
+                <content-block2 class="block-text">
+                  <p>test</p>
+                </content-block2>
+              </chat-content>
               
             </section>
 
@@ -181,7 +191,7 @@
         </div>
 
         <div v-else-if="section_two" class="chat__messages" id="section_two">
-          <section v-if="district" id="district_content" class="district content">
+          <section v-if="branly" id="district_content" class="district content">
             <chat-content>
               <content-block1>
                 <div class="message-img-div">
@@ -191,13 +201,13 @@
             </chat-content>
           </section>
 
-          <section v-else-if="addressage" id="addressage_content" class="addressage content">
+          <section v-else-if="laManu1" id="addressage_content" class="addressage content">
             <chat-content>
               
             </chat-content>
           </section>
 
-          <section v-else-if="shifumi" id="shifumi_content" class="shifumi content">
+          <section v-else-if="laManu2" id="shifumi_content" class="shifumi content">
             <chat-content>
               
             </chat-content>
