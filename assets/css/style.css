@@ -609,6 +609,14 @@ progress[value]::-webkit-progress-value {
     height: 200px;
 }
 
+.content-block-300 {
+    height: 300px;
+}
+
+.content-block-50 {
+    height: 50px;
+}
+
 .content-block3 {
     display: flex;
     flex-wrap: wrap;
@@ -660,5 +668,10 @@ progress[value]::-webkit-progress-value {
 
 .chat-content p {
     font-size: 17px;
-    padding: 30px;
+    padding: 15px;
+}
+
+.block-tittle {
+    align-content: center;
+    justify-content: center;
 }
