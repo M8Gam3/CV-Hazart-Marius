@@ -774,3 +774,9 @@ progress[value]::-webkit-progress-value {
     display: flex;
     flex-direction: column;
 }
+
+.center {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
