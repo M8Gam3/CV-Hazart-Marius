@@ -14,11 +14,11 @@
     <main id="app">
       <div class="servers">
         <div v-on:click="navOne" class="server-logo logo" id="btn_one">
-          <img class="img-logo" src="./assets/img/image-test.webp" alt="Discord"/>
+          <img class="img-logo" src="./assets/img/logo-menu.jpg" alt="Discord"/>
         </div>
         <div v-on:click="navTwo" class="server-logo" id="btn_two">
           <span class="message__count">3</span>
-          <img class="img-logo" src="./assets/img/image-test.webp" alt="server"/>
+          <img class="img-logo" src="./assets/img/logo-portfolio.jpg" alt="server"/>
         </div>
 
         <!-- <div class="server-logo">
@@ -47,7 +47,7 @@
             <div v-on:click="navHome" class="sidebar__user" id="home_icon">
               <div class="sidebar__user_div">
                 <span class="status"></span>
-                <img class="img-logo" src="./assets/img/image-test.webp" alt="avatar" />
+                <img class="img-logo" src="./assets/img/menu.jpg" alt="avatar" />
               </div>
               <h4>Accueil</h4>
             </div>
@@ -55,7 +55,7 @@
             <div v-on:click="navProfil" class="sidebar__user" id="profile_icon">
               <div class="sidebar__user_div">
                 <span class="status"></span>
-                <img class="img-logo" src="./assets/img/image-test.webp" alt="avatar" />
+                <img class="img-logo" src="./assets/img/profil.jpg" alt="avatar" />
               </div>
               <h4>Profil</h4>
             </div>
@@ -63,7 +63,7 @@
             <div v-on:click="navSkills" class="sidebar__user" id="skills_icon">
               <div class="sidebar__user_div">
                 <span class="status"></span>
-                <img class="img-logo" src="./assets/img/image-test.webp" alt="avatar" />
+                <img class="img-logo" src="./assets/img/skills.jpg" alt="avatar" />
               </div>
               <h4>Compétences</h4>
             </div>
@@ -78,7 +78,7 @@
             <div v-on:click="navDistrict" class="sidebar__user" id="home_icon">
               <div class="sidebar__user_div">
                 <span class="status"></span>
-                <img class="img-logo" src="./assets/img/image-test.webp" alt="avatar" />
+                <img class="img-logo" src="./assets/img/branly.png" alt="avatar" />
               </div>
               <h4>Branly</h4>
             </div>
@@ -86,15 +86,16 @@
             <div v-on:click="navAddressage" class="sidebar__user" id="home_icon">
               <div class="sidebar__user_div">
                 <span class="status"></span>
-                <img class="img-logo" src="./assets/img/image-test.webp" alt="avatar" />
+                <img class="img-logo" src="./assets/img/la-manu.png" alt="avatar" />
               </div>
               <h4>1ère année a LA MANU</h4>
             </div>
 
-            <div v-on:click="navShifumi" class="sidebar__user" id="home_icon">
+            <!-- v-on:click="navShifumi" -->
+            <div class="sidebar__user" id="home_icon">
               <div class="sidebar__user_div">
-                <span class="status"></span>
-                <img class="img-logo" src="./assets/img/image-test.webp" alt="avatar" />
+                <span class="status2"></span>
+                <img class="img-logo" src="./assets/img/la-manu-2.png" alt="avatar" />
               </div>
               <h4>2ème année a LA MANU</h4>
             </div>
@@ -205,7 +206,7 @@
 
             <section v-else-if="skills" id="skills_content" class="skills content">
               <div class="skills-h2">
-                <div class="skills-title-div"><h2 class="skills-title">Skills</h2></div>
+                <div class="skills-title-div"><h2 class="skills-title">Compétences</h2></div>
                 <div class="skills-desc"><p class="skills-desc-p">Les niveaux représentés sont affiliés a mon niveau de compréhension et développement dans chaques domaines plutôt que mon niveau de compétences</p></div>
               </div>
               <article class="skills-article">

@@ -222,6 +222,17 @@ main {
     outline: 3px solid #2f3135;
 }
 
+.status2 {
+    height: 10px;
+    width: 10px;
+    background-color: #dc2b2b;
+    border-radius: 50%;
+    position: absolute;
+    top: 65%;
+    left: 65%;
+    outline: 3px solid #2f3135;
+}
+
 .sidebar__profile {
     display: flex;
     justify-content: space-between;
@@ -730,27 +741,27 @@ progress[value]::-webkit-progress-value {
 
 
 .addressage-python {
-    background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url(../img/image-test.webp);
+    background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url(../img/addressage-python.png);
     background-size: cover;
 }
 
 .shifumi-js {
-    background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url(../img/image-test.webp);
+    background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url(../img/shifumi-js.png);
     background-size: cover;
 }
 
 .disctrict-noir-python {
-    background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url(../img/image-test.webp);
+    background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url(../img/district-noir-python.png);
     background-size: cover;
 }
 
 .popchill {
-    background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url(../img/image-test.webp);
+    background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url(../img/popchill.png);
     background-size: cover;
 }
 
 .lcai {
-    background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url(../img/image-test.webp);
+    background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url(../img/lcai.png);
     background-size: cover;
 }
 
