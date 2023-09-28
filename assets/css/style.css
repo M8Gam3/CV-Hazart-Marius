@@ -61,7 +61,7 @@ main {
     position: relative;
 }
 
-.server-logo > img {
+.server-logo {
     transition: 0.3s ease-in-out;
 }
 
@@ -660,6 +660,12 @@ progress[value]::-webkit-progress-value {
     max-height: 100%; 
 }
 
+.message-img2 {
+    object-fit: contain;
+    max-width: 75px;
+    max-height: 50px; 
+}
+
 .circle {
     width: 30px;
     height: 30px;
@@ -780,3 +786,26 @@ progress[value]::-webkit-progress-value {
     align-content: center;
     justify-content: center;
 }
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.percent50-height {
+    height: 20%;
+}
+
+.aligne-center {
+    align-items: center;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
