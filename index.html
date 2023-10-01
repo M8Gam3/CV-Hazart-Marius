@@ -158,26 +158,13 @@
                   <h2>Établissement d'Enseignement Supérieur des Métiers du Numérique</h2>
                 </div>
               </div>
-            </section>
-    
-            <section v-else-if="profil" id="profile_content" class="home content">
-              <chat-content>
-                <content-block0 class="center">
-                  <h2>Profil</h2>
-                </content-block0>
+              
+              <chat-content style="display: flex; flex-direction: column;">
+                <content-block0 class="content-block-50"></content-block0>
 
-                <content-block3>
-                  <img class="message-img circle2" src="./assets/img/profil-img1.jpg" alt="">
-                </content-block3>
-                <content-block2 class="block-text">
-                  <p>Je suis un développeur principalement orienté back-end passionné d’algorithmie. Mon expertise repose sur la conception, le développement, et la maintenance de l'infrastructure serveur, ainsi que sur la gestion efficace des bases de données. Mon objectif est de fournir des solutions technologiques efficaces qui améliorent les performances et l'évolutivité des applications</p>
-                </content-block2>
-
-                <!-- <content-block0 class="content-block-50"></content-block0> -->
-
-                <!-- <content-block1 style="height: 275px;"> -->
+                <content-block1 style="height: 275px;">
                   <!-- <p>Numéro de téléphone : <input type="text" disabled value="06 22 09 50 44"></p> -->
-                  <!-- <p>Numéro de téléphone : 06 22 09 50 44</p>
+                  <p>Numéro de téléphone : 06 22 09 50 44</p>
                   <p>Mail : marius.hazart@gmail.com</p>
                   <p>Github : https://github.com/M8Gam3</p>
                   <p>Linkedin : https://www.linkedin.com/in/marius-hazart-bb5a59263/</p>
@@ -199,7 +186,23 @@
                       <p>Niveau : B1</p>
                     </div>
                   </div>
-                </content-block1> -->
+                </content-block1>
+              </chat-content>
+
+            </section>
+    
+            <section v-else-if="profil" id="profile_content" class="home content">
+              <chat-content>
+                <content-block0 class="center">
+                  <h2>Profil</h2>
+                </content-block0>
+
+                <content-block3>
+                  <img class="message-img circle2" src="./assets/img/profil-img1.jpg" alt="">
+                </content-block3>
+                <content-block2 class="block-text">
+                  <p>Je suis un développeur principalement orienté back-end passionné d’algorithmie. Mon expertise repose sur la conception, le développement, et la maintenance de l'infrastructure serveur, ainsi que sur la gestion efficace des bases de données. Mon objectif est de fournir des solutions technologiques efficaces qui améliorent les performances et l'évolutivité des applications</p>
+                </content-block2>
 
                 <content-block0 class="content-block-50"></content-block0>
 
