@@ -82,6 +82,7 @@ var app = new Vue({
         home: true,
         profil: false,
         skills: false,
+        experience: false,
 
         section_two: false,
         branly: true,
@@ -335,16 +336,25 @@ var app = new Vue({
             this.home = true;
             this.profil = false;
             this.skills = false;
+            this.experience = false;
         },
         navProfil: function () {
             this.home = false;
             this.profil = true;
             this.skills = false;
+            this.experience = false;
         },
         navSkills: function () {
             this.home = false;
             this.profil = false;
             this.skills = true;
+            this.experience = false;
+        },
+        navExperience: function () {
+            this.home = false;
+            this.profil = false;
+            this.skills = false;
+            this.experience = true;
         },
 
 
