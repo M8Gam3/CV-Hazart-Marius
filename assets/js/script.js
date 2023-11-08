@@ -421,10 +421,10 @@ btnTwo.addEventListener("click", function(){
 
 function mobileOpen() {
     let navbar = document.querySelector('#navbar');
-    navbar.classList.remove("mobile");
+    navbar.classList.toggle("mobile");
 }
 
 function mobileClose() {
     let navbar = document.querySelector('#navbar');
-    navbar.classList.add("mobile");
+    navbar.classList.toggle("mobile");
 }

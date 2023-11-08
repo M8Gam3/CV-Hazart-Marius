@@ -763,6 +763,10 @@ progress[value]::-webkit-progress-value {
     display: flex;
 }
 
+.home-link {
+    color: #ffffff;
+}
+
 
 /* ############################################## */
 
