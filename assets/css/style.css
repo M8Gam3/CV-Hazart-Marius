@@ -638,7 +638,7 @@ progress[value]::-webkit-progress-value {
 } */
 
 .chat-content p {
-    font-size: 17px;
+    /* font-size: 17px; */
     padding: 15px;
 }
 
@@ -669,7 +669,7 @@ progress[value]::-webkit-progress-value {
     padding-inline: 1.5vw;
     padding-block: 2vh;
     width: 100%;
-    height: 40%;
+    /* height: 40%; */
     overflow: hidden;
     transition: width 1s, height 2s;
     -webkit-transition: background-color 0.5s ease-out;
@@ -686,7 +686,7 @@ progress[value]::-webkit-progress-value {
 }
 
 .pi-desc {
-    font-size: 0.7em;
+    font-size: 1em;
     color: rgba(255, 255, 255, 0.7);
 }
 
