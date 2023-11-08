@@ -13,9 +13,14 @@
   <body id="body">
     <main id="app">
       <p id="test"></p>
-      <section class="navbar" id="navbar">
+      <section class="navbar mobile" id="navbar">
 
         <div class="servers">
+          <div class="server-logo logo">
+            <div id="burger-menu" class="close" onclick="mobileClose()">
+              <span></span>
+            </div>
+          </div>
           <div v-on:click="navOne" class="server-logo logo" id="btn_one">
             <img class="img-logo" src="./assets/img/logo-menu.jpg" alt="Discord"/>
           </div>
@@ -137,6 +142,9 @@
       <div class="chat">
         <div>
           <div class="chatHeader">
+            <div id="burger-menu" onclick="mobileOpen()">
+              <span></span>
+            </div>
             <div class="chatHeader__left">
               <span class="chatHeader__Dm"> </span>
               <div v-if="section_one">
@@ -207,7 +215,7 @@
             <section v-else-if="profil" id="profile_content" class="home content">
               <chat-content>
                 <content-block0 class="center">
-                  <h2>Profil</h2>
+                  <h2 class="profile-h2">Profil</h2>
                 </content-block0>
 
                 <content-block3>

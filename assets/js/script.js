@@ -9,23 +9,23 @@ Vue.component('object-category-skills', {
 });
 
 Vue.component('content-block0', {
-    template:   `<div class="content-block0"><slot></div>`,
+    template:   `<div class="content-block0"><slot /></div>`,
 });
 
 Vue.component('content-block1', {
-    template:   `<div class="content-block1"><slot></div>`,
+    template:   `<div class="content-block1"><slot /></div>`,
 });
 
 Vue.component('content-block2', {
-    template:   `<div class="content-block2"><slot></div>`,
+    template:   `<div class="content-block2"><slot /></div>`,
 });
 
 Vue.component('content-block3', {
-    template:   `<div class="content-block3"><slot></div>`,
+    template:   `<div class="content-block3"><slot /></div>`,
 });
 
 Vue.component('chat-content', {
-    template:   `<div class="chat-content"><slot></div>`,
+    template:   `<div class="chat-content"><slot /></div>`,
 });
 
 
@@ -34,31 +34,29 @@ Vue.component('chat-content', {
 
 
 
-var touchRegionElement = document.querySelector('#app');
-var navbar = document.querySelector('#navbar');
+// var touchRegionElement = document.querySelector('#app');
+// var navbar = document.querySelector('#navbar');
 
-var initialX, initialY, initialTime;
+// var initialX, initialY, initialTime;
 
-touchRegionElement.addEventListener('touchstart', function(e) {
-    initialX = e.touches[0].clientX;
-    initialY = e.touches[0].clientY;
-    initialTime = new Date();
-});
+// touchRegionElement.addEventListener('touchstart', function(e) {
+//     initialX = e.touches[0].clientX;
+//     initialY = e.touches[0].clientY;
+//     initialTime = new Date();
+// });
 
-touchRegionElement.addEventListener('touchend', function(e) {
-    var deltaX = e.changedTouches[0].clientX - initialX;
-    var deltaY = Math.abs(e.changedTouches[0].clientY - initialY);
-    var deltaTime = new Date() - initialTime;
+// touchRegionElement.addEventListener('touchend', function(e) {
+//     var deltaX = e.changedTouches[0].clientX - initialX;
+//     var deltaY = Math.abs(e.changedTouches[0].clientY - initialY);
+//     var deltaTime = new Date() - initialTime;
 
-    if (deltaX <= -30 && deltaY <= 100 && deltaTime <= 300) {
-        console.log('left');
-    }
-    else if (deltaX >= -30 && deltaY >= 100 && deltaTime <= 300) {
-        console.log('right');
-    }
-});
-
-
+//     if (deltaX <= -30 && deltaY <= 100 && deltaTime <= 300) {
+//         console.log('left');
+//     }
+//     else if (deltaX >= -30 && deltaY >= 100 && deltaTime <= 300) {
+//         console.log('right');
+//     }
+// });
 
 
 
@@ -420,3 +418,13 @@ btnTwo.addEventListener("click", function(){
     btnOne.classList.remove("logo");
     btnTwo.classList.add("logo");
 })
+
+function mobileOpen() {
+    let navbar = document.querySelector('#navbar');
+    navbar.classList.remove("mobile");
+}
+
+function mobileClose() {
+    let navbar = document.querySelector('#navbar');
+    navbar.classList.add("mobile");
+}
