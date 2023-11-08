@@ -91,7 +91,7 @@ var app = new Vue({
                 },
                 {
                     name: 'CSS',
-                    level: 2,
+                    level: 3.5,
                     more:[
                         {
                             name: 'flex',
@@ -105,6 +105,12 @@ var app = new Vue({
                             name: 'reponsive',
                             level: 2
                         },
+                    ],
+                },
+                {
+                    name: 'SASS',
+                    level: 3.5,
+                    more:[
                     ],
                 },
                 {
@@ -129,6 +135,12 @@ var app = new Vue({
                             name: 'local storage',
                             level: 3,
                         },
+                    ],
+                },
+                {
+                    name: 'React',
+                    level: 4,
+                    more:[
                     ],
                 },
                 {
@@ -189,7 +201,7 @@ var app = new Vue({
             design: [
                 {
                     name: 'Figma',
-                    level: 2.5,
+                    level: 3.5,
                     more:[
                         {
                             name: 'UI',
@@ -201,8 +213,14 @@ var app = new Vue({
                         },
                         {
                             name: 'maquettage',
-                            level: 3,
+                            level: 4,
                         },
+                    ],
+                },
+                {
+                    name: 'Blender',
+                    level: 2.5,
+                    more:[
                     ],
                 },
                 {
@@ -257,6 +275,20 @@ var app = new Vue({
                             name: 'illustration',
                             level: 1,
                         },
+                    ],
+                },
+            ],
+            CMS: [
+                {
+                    name: 'Wordpress',
+                    level: 2.5,
+                    more:[
+                    ],
+                },
+                {
+                    name: 'Prestashop',
+                    level: 3,
+                    more:[
                     ],
                 },
             ],
