@@ -383,61 +383,6 @@ main {
     margin-left: 10px;
 }
 
-@media (max-width: 840px) {
-    .servers {
-        display: none;
-    }
-
-    .sidebar {
-        width: 70px;
-        align-items: center;
-    }
-
-    .sidebar__icon > span {
-        display: none;
-    }
-
-    .sidebar__icon > i {
-        margin: 0;
-    }
-
-    .sidebar__usersHeader {
-        justify-content: center;
-    }
-
-    .sidebar__header {
-        display: none;
-    }
-
-    .sidebar__user > h4 {
-        display: none;
-    }
-
-    .sidebar__profile {
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .sidebar__profileInfo {
-        display: none;
-    }
-
-    .sidebar__profileIcons {
-        display: flex;
-    }
-
-    .sidebar__profileIcons > i {
-        padding: 5px;
-    }
-
-    .chatHeader {
-        justify-content: center;
-    }
-
-    .chatHeader__left {
-        display: none;
-    }
-}
 
 
 
@@ -814,5 +759,101 @@ progress[value]::-webkit-progress-value {
     justify-content: space-around;
 }
 
+.navbar {
+    display: flex;
+}
+
 
 /* ############################################## */
+
+@media screen and (max-width: 800px) {
+
+    .navbar-mobile {
+        display: none;
+    }
+
+    .content-block0 {
+        width: 100%;
+    }
+    
+    .content-block1 {
+        width: 100%;
+    }
+    
+    .content-block2 {
+        width: 100%;
+    }
+    
+    .content-block-300 {
+    }
+    
+    .content-block-portfolio {
+    }
+    
+    .content-block-50 {
+    }
+    
+    .content-block-30 {
+    }
+    
+    .content-block3 {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .servers {
+        display: none;
+    }
+
+    .sidebar {
+        width: 70px;
+        align-items: center;
+    }
+
+    .sidebar__icon > span {
+        display: none;
+    }
+
+    .sidebar__icon > i {
+        margin: 0;
+    }
+
+    .sidebar__usersHeader {
+        justify-content: center;
+    }
+
+    .sidebar__header {
+        display: none;
+    }
+
+    .sidebar__user > h4 {
+        display: none;
+    }
+
+    .sidebar__profile {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .sidebar__profileInfo {
+        display: none;
+    }
+
+    .sidebar__profileIcons {
+        display: flex;
+    }
+
+    .sidebar__profileIcons > i {
+        padding: 5px;
+    }
+
+    .chatHeader {
+        justify-content: center;
+    }
+
+    .chatHeader__left {
+        display: none;
+    }
+}
