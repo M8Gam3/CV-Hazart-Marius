@@ -805,7 +805,7 @@ progress[value]::-webkit-progress-value {
         width: 100%;
     }
     
-    .content-block-300 {
+    /* .content-block-300 {
     }
     
     .content-block-portfolio {
@@ -815,7 +815,7 @@ progress[value]::-webkit-progress-value {
     }
     
     .content-block-30 {
-    }
+    } */
     
     .content-block3 {
         width: 100%;
