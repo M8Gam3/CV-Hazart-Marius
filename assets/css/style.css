@@ -711,8 +711,19 @@ progress[value]::-webkit-progress-value {
     background-size: cover;
 }
 
+.green {
+    background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url(../img/sweet-green.png);
+    background-size: cover;
+}
+
+
 .lcai {
     background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url(../img/lcai.png);
+    background-size: cover;
+}
+
+.manubox {
+    background: linear-gradient(180deg, rgba(5,10,32,0.4) 0%, rgba(5,10,39,0.5) 100%), url(../img/lamanubox.png);
     background-size: cover;
 }
 
