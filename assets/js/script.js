@@ -138,12 +138,6 @@ var app = new Vue({
                     ],
                 },
                 {
-                    name: 'React',
-                    level: 4,
-                    more:[
-                    ],
-                },
-                {
                     name: 'PHP',
                     level: 3.5,
                     more:[
@@ -171,6 +165,10 @@ var app = new Vue({
                         },
                     ],
                 },
+                {
+                    name: 'Java',
+                    level: 3,
+                },
             ],
             framework: [
                 {
@@ -195,6 +193,18 @@ var app = new Vue({
                             name: 'style',
                             level: 3,
                         },
+                    ],
+                },
+                {
+                    name: 'React',
+                    level: 4,
+                    more:[
+                    ],
+                },
+                {
+                    name: 'Symfony',
+                    level: 3,
+                    more:[
                     ],
                 },
             ],
@@ -342,6 +352,11 @@ var app = new Vue({
                             level: 1,
                         },
                     ],
+                },
+                {
+                    name: 'Docker',
+                    level: 2.5,
+
                 },
             ],
         },
