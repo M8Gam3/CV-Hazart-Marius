@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./vars.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      a,
+      button,
+      input,
+      select,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: none;
+        text-decoration: none;
+        appearance: none;
+        background: none;
+
+        -webkit-font-smoothing: antialiased;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="discord-dark-mode">
+      <div class="header">
+        <div class="header2">
+          <div class="discord">Discord</div>
+        </div>
+        <div class="div-icons">
+          <div class="minus">
+            <svg
+              class="minus2"
+              width="26"
+              height="24"
+              viewBox="0 0 26 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.5 12L19.5 12"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <svg
+            class="square-minus"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="24" height="24" fill="#202225" />
+            <path
+              d="M14.4 6H9.6H6V9.6V14.4V18H9.6H14.4H18V14.4V9.6V6H14.4Z"
+              stroke="white"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <div class="xmark">
+            <svg
+              class="xmark2"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 6L18 18M18 6L6 18"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="nav-wrapper">
+          <div class="div-list-item">
+            <div class="divider">
+              <div class="rectangle-64"></div>
+            </div>
+            <div class="discord-icon">
+              <div class="discord2">
+                <svg
+                  class="group-3"
+                  width="32"
+                  height="26"
+                  viewBox="0 0 32 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M27.0893 2.83438C25.0498 1.89854 22.8626 1.20905 20.5759 0.814157C20.5342 0.806535 20.4926 0.825581 20.4712 0.863675C20.1899 1.36396 19.8783 2.01663 19.6601 2.52962C17.2005 2.16139 14.7536 2.16139 12.3444 2.52962C12.1262 2.00522 11.8033 1.36396 11.5208 0.863675C11.4993 0.826852 11.4577 0.807806 11.4161 0.814157C9.13055 1.20779 6.94341 1.89728 4.90258 2.83438C4.88491 2.842 4.86977 2.85471 4.85972 2.87121C0.711189 9.06902 -0.425267 15.1145 0.13224 21.085C0.134763 21.1142 0.15116 21.1422 0.173864 21.1599C2.91095 23.17 5.56228 24.3903 8.16437 25.1991C8.20602 25.2118 8.25014 25.1966 8.27664 25.1623C8.89217 24.3217 9.44086 23.4354 9.9113 22.5033C9.93906 22.4488 9.91256 22.384 9.85582 22.3624C8.98551 22.0323 8.1568 21.6297 7.35964 21.1726C7.29659 21.1358 7.29154 21.0456 7.34954 21.0025C7.5173 20.8768 7.68509 20.746 7.84527 20.6139C7.87425 20.5898 7.91464 20.5847 7.94871 20.5999C13.1857 22.991 18.8554 22.991 24.0306 20.5999C24.0647 20.5834 24.1051 20.5885 24.1353 20.6126C24.2955 20.7447 24.4633 20.8768 24.6323 21.0025C24.6903 21.0456 24.6865 21.1358 24.6235 21.1726C23.8263 21.6386 22.9976 22.0323 22.126 22.3611C22.0693 22.3827 22.044 22.4488 22.0718 22.5033C22.5523 23.4341 23.101 24.3204 23.7052 25.161C23.7304 25.1966 23.7758 25.2118 23.8175 25.1991C26.4322 24.3903 29.0835 23.17 31.8206 21.1599C31.8446 21.1422 31.8597 21.1155 31.8622 21.0863C32.5294 14.1837 30.7447 8.1878 27.131 2.87247C27.1221 2.85471 27.107 2.842 27.0893 2.83438Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M7.8175 14.2244C7.8175 16.0021 9.11666 17.4496 10.6934 17.4496C12.2952 17.4496 13.5692 16.0021 13.5692 14.2244C13.5944 12.4594 12.3078 10.9991 10.6934 10.9991C9.09146 10.9991 7.8175 12.4466 7.8175 14.2244Z"
+                    fill="#5865F2"
+                  />
+                  <path
+                    d="M18.4505 14.2244C18.4505 16.0021 19.7497 17.4496 21.3263 17.4496C22.9408 17.4496 24.2022 16.0021 24.2022 14.2244C24.2274 12.4594 22.9408 10.9991 21.3263 10.9991C19.7244 10.9991 18.4505 12.4466 18.4505 14.2244Z"
+                    fill="#5865F2"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="divider2"></div>
+          <div class="div-list-item">
+            <div class="rectangle-66">
+              <div class="rectangle-64"></div>
+            </div>
+            <div class="svg-circle-icon">
+              <div
+                class="discord-icon2"
+                style="
+                  background: url(discord-icon1.png) center;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                "
+              >
+                <div class="number">
+                  <div class="_3-k">3k+</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="div-list-item">
+            <div class="divider3">
+              <div class="rectangle-64"></div>
+            </div>
+            <div class="svg-circle-icon">
+              <div
+                class="discord-icon2"
+                style="
+                  background: url(discord-icon2.png) center;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                "
+              >
+                <div class="number2">
+                  <div class="_241">241</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="div-list-item2">
+            <div class="svg-circle-icon2">
+              <svg
+                class="plus-large"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 12H20M12 4V20"
+                  stroke="#3BA55D"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="div-list-item">
+            <div class="divider3">
+              <div class="rectangle-64"></div>
+            </div>
+            <div class="svg-circle-icon2">
+              <svg
+                class="compass"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 12H12.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12ZM16 8L9.5 9.5L8 16L14.5 14.5L16 8Z"
+                  stroke="#3BA55D"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="divider4"></div>
+        </div>
+        <div class="div-sidebar">
+          <div class="sidebar">
+            <div class="search-bar">
+              <div class="search">
+                <div class="find-or-start-a-conversation">
+                  Find or start a conversation
+                </div>
+              </div>
+            </div>
+            <svg
+              class="rectangle-72"
+              width="240"
+              height="1"
+              viewBox="0 0 240 1"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0H240V1H0V0Z" fill="#232428" />
+            </svg>
+            <div class="row">
+              <div class="sidebar-item">
+                <svg
+                  class="icon6"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 5V6.3125C2 9.94375 4.1561 13.12 7.36585 14.8875V19H22V17.25C22 14.9225 16.8 13.75 14.1951 13.75C14.1951 13.75 14.0293 13.75 13.9512 13.75C9.31707 13.75 5.41463 10.25 5.41463 6.3125V5H2ZM14.1951 5C12.0399 5 10.2927 6.567 10.2927 8.5C10.2927 10.433 12.0399 12 14.1951 12C16.3504 12 18.0976 10.433 18.0976 8.5C18.0976 6.567 16.3504 5 14.1951 5Z"
+                    fill="white"
+                  />
+                </svg>
+                <div class="friends">Friends</div>
+              </div>
+              <div class="sidebar-item2">
+                <svg
+                  class="icons"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.44772 9.83655C5.44772 10.1353 5.18925 10.3843 4.87903 10.3843H4.56881C4.2586 10.3843 4 10.1353 4 9.83655C4 9.53776 4.2586 9.2888 4.56881 9.2888H4.87903C5.18925 9.2888 5.44772 9.53776 5.44772 9.83655ZM19.4592 9.68715C20.8034 12.4261 19.5625 15.7128 16.6155 17.0075C13.7719 18.2526 10.3595 17.0574 9.06691 14.3184C8.80844 13.7707 8.65333 13.1731 8.60159 12.5755H7.46408C7.15387 12.5755 6.89539 12.3264 6.89539 12.0276C6.89539 11.7289 7.15387 11.4799 7.46408 11.4799H9.11866C9.42887 11.4799 9.68735 11.2309 9.68735 10.9322C9.68735 10.6334 9.42887 10.3843 9.11866 10.3843H6.48181C6.17159 10.3843 5.913 10.1353 5.913 9.83655C5.913 9.53776 6.17159 9.2888 6.48181 9.2888H10.1527C10.4629 9.2888 10.7214 9.03973 10.7214 8.74094C10.7214 8.44215 10.4629 8.19319 10.1527 8.19319H8.65333C8.188 8.19319 7.7743 7.84456 7.7743 7.34666C7.7743 6.89847 8.13626 6.5 8.65333 6.5H14.4957C16.5639 6.59968 18.5285 7.74501 19.4592 9.68715ZM12.925 9.13783C11.2902 9.86091 10.5733 11.7236 11.324 13.2982C12.0748 14.8728 14.0086 15.5633 15.6435 14.8402C17.2785 14.1171 17.9952 12.2545 17.2445 10.6798C16.4937 9.1052 14.5598 8.41475 12.925 9.13783ZM15.5298 10.1851L16.5638 11.8783C16.6155 11.9779 16.6155 12.0277 16.5638 12.1273L15.5298 13.8205C15.478 13.92 15.3747 13.92 15.3229 13.92H13.3065C13.2031 13.92 13.1514 13.8702 13.0998 13.8205L12.0656 12.1273C12.014 12.0277 12.014 11.9779 12.0656 11.8783L13.0998 10.1851C13.1514 10.0856 13.2549 10.0856 13.3065 10.0856H15.3229C15.4264 10.0357 15.478 10.0856 15.5298 10.1851Z"
+                    fill="#96989D"
+                  />
+                </svg>
+                <div class="nitro">Nitro</div>
+              </div>
+              <div class="sidebar-item2">
+                <div class="direct-messages">DIRECT MESSAGES</div>
+                <svg
+                  class="plus"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 12H18M12 6V18"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="sidebar-item2">
+                <div class="rectangle-73"></div>
+                <div class="rectangle-74"></div>
+              </div>
+              <div class="sidebar-item2">
+                <div class="rectangle-73"></div>
+                <div class="rectangle-74"></div>
+              </div>
+              <div class="sidebar-item2">
+                <div class="rectangle-73"></div>
+                <div class="rectangle-74"></div>
+              </div>
+              <div class="sidebar-item2">
+                <div class="rectangle-73"></div>
+                <div class="rectangle-74"></div>
+              </div>
+              <div class="sidebar-item2">
+                <div class="rectangle-73"></div>
+                <div class="rectangle-74"></div>
+              </div>
+              <div class="sidebar-item2">
+                <div class="rectangle-732"></div>
+                <div class="rectangle-742"></div>
+              </div>
+              <div class="sidebar-item2">
+                <div class="rectangle-732"></div>
+                <div class="rectangle-742"></div>
+              </div>
+              <div class="sidebar-item2">
+                <div class="rectangle-732"></div>
+                <div class="rectangle-742"></div>
+              </div>
+              <div class="sidebar-item2">
+                <div class="rectangle-732"></div>
+                <div class="rectangle-742"></div>
+              </div>
+              <div class="sidebar-item2">
+                <div class="rectangle-732"></div>
+                <div class="rectangle-742"></div>
+              </div>
+              <div class="sidebar-item2">
+                <div class="rectangle-733"></div>
+                <div class="rectangle-743"></div>
+              </div>
+              <div class="sidebar-item2">
+                <div class="rectangle-733"></div>
+                <div class="rectangle-743"></div>
+              </div>
+              <div class="sidebar-item2">
+                <div class="rectangle-733"></div>
+                <div class="rectangle-743"></div>
+              </div>
+              <div class="sidebar-item2">
+                <div class="rectangle-733"></div>
+                <div class="rectangle-743"></div>
+              </div>
+              <div class="sidebar-item2">
+                <div class="rectangle-733"></div>
+                <div class="rectangle-743"></div>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="icons2">
+              <div class="discord3">
+                <svg
+                  class="group-32"
+                  width="16"
+                  height="14"
+                  viewBox="0 0 16 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.5447 1.91719C12.5249 1.44927 11.4313 1.10453 10.2879 0.907078C10.2671 0.903268 10.2463 0.912791 10.2356 0.931837C10.0949 1.18198 9.93915 1.50831 9.83006 1.76481C8.60027 1.5807 7.37679 1.5807 6.17221 1.76481C6.0631 1.50261 5.90166 1.18198 5.76038 0.931837C5.74966 0.913426 5.72886 0.903903 5.70803 0.907078C4.56527 1.1039 3.47171 1.44864 2.45129 1.91719C2.44246 1.921 2.43488 1.92736 2.42986 1.9356C0.355594 5.03451 -0.212634 8.05725 0.0661201 11.0425C0.0673814 11.0571 0.0755799 11.0711 0.086932 11.08C1.45547 12.085 2.78114 12.6951 4.08219 13.0995C4.10301 13.1059 4.12507 13.0983 4.13832 13.0811C4.44608 12.6609 4.72043 12.2177 4.95565 11.7517C4.96953 11.7244 4.95628 11.692 4.92791 11.6812C4.49275 11.5161 4.0784 11.3149 3.67982 11.0863C3.64829 11.0679 3.64577 11.0228 3.67477 11.0012C3.75865 10.9384 3.84255 10.873 3.92264 10.807C3.93713 10.7949 3.95732 10.7923 3.97435 10.8C6.59286 11.9955 9.4277 11.9955 12.0153 10.8C12.0323 10.7917 12.0525 10.7943 12.0677 10.8063C12.1478 10.8723 12.2316 10.9384 12.3161 11.0012C12.3451 11.0228 12.3433 11.0679 12.3117 11.0863C11.9131 11.3193 11.4988 11.5161 11.063 11.6806C11.0346 11.6914 11.022 11.7244 11.0359 11.7517C11.2762 12.217 11.5505 12.6602 11.8526 13.0805C11.8652 13.0983 11.8879 13.1059 11.9087 13.0995C13.2161 12.6951 14.5417 12.085 15.9103 11.08C15.9223 11.0711 15.9298 11.0577 15.9311 11.0431C16.2647 7.59185 15.3723 4.5939 13.5655 1.93623C13.5611 1.92736 13.5535 1.921 13.5447 1.91719Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M3.90869 7.61219C3.90869 8.50105 4.55827 9.22481 5.34662 9.22481C6.14754 9.22481 6.78452 8.50105 6.78452 7.61219C6.79714 6.72969 6.15385 5.99957 5.34662 5.99957C4.54567 5.99957 3.90869 6.72334 3.90869 7.61219Z"
+                    fill="#757E8A"
+                  />
+                  <path
+                    d="M9.2252 7.61219C9.2252 8.50105 9.87478 9.22481 10.6631 9.22481C11.4704 9.22481 12.101 8.50105 12.101 7.61219C12.1136 6.72969 11.4704 5.99957 10.6631 5.99957C9.86216 5.99957 9.2252 6.72334 9.2252 7.61219Z"
+                    fill="#757E8A"
+                  />
+                </svg>
+              </div>
+              <div class="rectangle-76"></div>
+            </div>
+            <div class="frame-102">
+              <div class="discord4">discord</div>
+              <div class="_1801">#1801</div>
+            </div>
+            <div class="icons3">
+              <div class="icon8">
+                <svg
+                  class="icons4"
+                  width="8"
+                  height="12"
+                  viewBox="0 0 8 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.70857 5.4C5.70857 6.396 4.94857 7.2 4 7.2C3.05143 7.2 2.28571 6.396 2.28571 5.4V1.8C2.28571 0.804 3.05143 0 4 0C4.94857 0 5.71429 0.804 5.71429 1.8L5.70857 5.4ZM4 8.46C5.57714 8.46 7.02857 7.2 7.02857 5.4H8C8 7.452 6.44571 9.144 4.57143 9.432V12H3.42857V9.432C1.55429 9.138 0 7.446 0 5.4H0.971429C0.971429 7.2 2.42286 8.46 4 8.46Z"
+                    fill="#B9BBBE"
+                  />
+                </svg>
+              </div>
+              <div class="icon8">
+                <svg
+                  class="icons5"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 0C2.6916 0 0 2.69099 0 6.00002V10.8C0 11.4624 0.537 12 1.2 12H2.4C3.0624 12 3.6 11.4624 3.6 10.8V9.00001C3.6 8.33761 3.0624 7.80001 2.4 7.80001H1.2V6.00002C1.2 3.35279 3.3534 1.2 6 1.2C8.6466 1.2 10.8 3.35279 10.8 6.00002V7.80001H9.6C8.9376 7.80001 8.4 8.33761 8.4 9.00001V10.8C8.4 11.4624 8.9376 12 9.6 12H10.8C11.4624 12 12 11.4624 12 10.8V6.00002C12 2.69099 9.3084 0 6 0Z"
+                    fill="#B9BBBE"
+                  />
+                </svg>
+              </div>
+              <div class="icon8">
+                <svg
+                  class="icons6"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.6428 4.8H12V7.2H10.6434C10.4988 7.7586 10.26 8.2788 9.939 8.7384L10.8 9.6L9.6 10.8L8.739 9.9384C8.2782 10.2594 7.7592 10.4988 7.2 10.6428V12H4.8V10.6428C4.2414 10.4988 3.7218 10.2594 3.2616 9.9384L2.4 10.8L1.2 9.6L2.0616 8.7384C1.7406 8.2794 1.5012 7.7592 1.3572 7.2H0V4.8H1.3572C1.5012 4.2408 1.74 3.7212 2.0616 3.2616L1.2 2.4L2.4 1.2L3.2616 2.0616C3.7212 1.74 4.2408 1.5012 4.8 1.3572V0H7.2V1.3566C7.7592 1.5012 8.2782 1.74 8.739 2.061L9.6 1.1994L10.8 2.3994L9.9384 3.2616C10.2594 3.7212 10.4988 4.2414 10.6428 4.8ZM6 8.4C7.32546 8.4 8.4 7.32546 8.4 6C8.4 4.67452 7.32546 3.6 6 3.6C4.67452 3.6 3.6 4.67452 3.6 6C3.6 7.32546 4.67452 8.4 6 8.4Z"
+                    fill="#B9BBBE"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div-addfriend">
+          <div class="div-title-container">
+            <div class="container2">
+              <div class="sidebar-item3">
+                <svg
+                  class="icon9"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 5V6.3125C2 9.94375 4.1561 13.12 7.36585 14.8875V19H22V17.25C22 14.9225 16.8 13.75 14.1951 13.75C14.1951 13.75 14.0293 13.75 13.9512 13.75C9.31707 13.75 5.41463 10.25 5.41463 6.3125V5H2ZM14.1951 5C12.0399 5 10.2927 6.567 10.2927 8.5C10.2927 10.433 12.0399 12 14.1951 12C16.3504 12 18.0976 10.433 18.0976 8.5C18.0976 6.567 16.3504 5 14.1951 5Z"
+                    fill="#72767D"
+                  />
+                </svg>
+                <div class="arkada-lar">Friends</div>
+              </div>
+              <div class="divider5"></div>
+              <div class="menu-item">
+                <div class="online">Online</div>
+              </div>
+              <div class="menu-item">
+                <div class="all">All</div>
+              </div>
+              <div class="menu-item">
+                <div class="pending">Pending</div>
+              </div>
+              <div class="menu-item">
+                <div class="blocked">Blocked</div>
+              </div>
+              <div class="menu-item">
+                <div class="add-friend">Add Friend</div>
+              </div>
+              <div class="icons7">
+                <svg
+                  class="message-square-medical"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 11H14M12 9V13M21 20L17.6757 18.3378C17.4237 18.2118 17.2977 18.1488 17.1656 18.1044C17.0484 18.065 16.9277 18.0365 16.8052 18.0193C16.6672 18 16.5263 18 16.2446 18H7.8C6.11984 18 5.27976 18 4.63803 17.673C4.07354 17.3854 3.6146 16.9265 3.32698 16.362C3 15.7202 3 14.8802 3 13.2V8.8C3 7.11984 3 6.27976 3.32698 5.63803C3.6146 5.07354 4.07354 4.6146 4.63803 4.32698C5.27976 4 6.11984 4 7.8 4H16.2C17.8802 4 18.7202 4 19.362 4.32698C19.9265 4.6146 20.3854 5.07354 20.673 5.63803C21 6.27976 21 7.11984 21 8.8V20Z"
+                    stroke="#B9BBBE"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <div class="divider5"></div>
+                <svg
+                  class="icon11"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.2222 4H5.76889C4.78222 4 4.00889 4.79111 4.00889 5.77778L4 18.2222C4 19.2 4.78222 20 5.76889 20H18.2222C19.2 20 20 19.2 20 18.2222V5.77778C20 4.79111 19.2 4 18.2222 4ZM18.2222 14.6667H14.6667C14.6667 16.1422 13.4667 17.3333 12 17.3333C10.5333 17.3333 9.33333 16.1422 9.33333 14.6667H5.76889V5.77778H18.2222V14.6667Z"
+                    fill="#B9BBBE"
+                  />
+                </svg>
+                <svg
+                  class="icon12"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 4C7.5888 4 4 7.5896 4 12C4 16.412 7.5888 20 12 20C16.4112 20 20 16.412 20 12C20 7.5896 16.4112 4 12 4ZM12 17C11.448 17 11 16.5528 11 16C11 15.448 11.448 15 12 15C12.552 15 13 15.448 13 16C13 16.5528 12.552 17 12 17ZM12.8 13.5V14.4H11.2V12H12C12.8832 12 13.6 11.2824 13.6 10.4C13.6 9.5168 12.8832 8.8 12 8.8C11.1168 8.8 10.4 9.5168 10.4 10.4H8.8C8.8 8.636 10.236 7.2 12 7.2C13.764 7.2 15.2 8.636 15.2 10.4C15.2 11.8888 14.1784 13.1432 12.8 13.5Z"
+                    fill="#B9BBBE"
+                  />
+                </svg>
+              </div>
+            </div>
+            <svg
+              class="divider6"
+              width="1608"
+              height="1"
+              viewBox="0 0 1608 1"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0H1608V1H0V0Z" fill="#232428" />
+            </svg>
+          </div>
+          <div class="container">
+            <div class="container3">
+              <div class="frame-2">
+                <div class="div-text-container">
+                  <div class="text">
+                    <div class="add-friend2">ADD FRIEND</div>
+                    <div
+                      class="you-can-add-a-friend-with-their-discord-tag-it-s-c-as-e-s-en-sit-iv-e"
+                    >
+                      You can add a friend with their Discord Tag. It’s
+                      cAsE-sEnSitIvE!
+                    </div>
+                  </div>
+                  <div class="search2">
+                    <div class="search3">
+                      <div class="div">|</div>
+                      <div class="enter-a-username-0000">
+                        Enter a Username#0000
+                      </div>
+                      <div class="button-disabled">
+                        <div class="send-friend-request">
+                          Send Friend Request
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <svg
+                  class="divider7"
+                  width="1248"
+                  height="1"
+                  viewBox="0 0 1248 1"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0 0H1248V1H0V0Z" fill="#42464D" />
+                </svg>
+              </div>
+              <div class="vector10">
+                <div class="group-33">
+                  <svg
+                    class="vector-11"
+                    width="345"
+                    height="135"
+                    viewBox="0 0 345 135"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M304.5 0H189.833C173.633 0 160.5 13.133 160.5 29.3333C160.5 49.5838 144.084 66 123.833 66H35C15.9462 66 0.5 81.4462 0.5 100.5C0.5 119.554 15.9462 135 35 135H227V90.5H304.5C326.591 90.5 344.5 72.5914 344.5 50.5V40C344.5 17.9086 326.591 0 304.5 0Z"
+                      fill="#3E4148"
+                    />
+                  </svg>
+                  <svg
+                    class="rectangle-10"
+                    width="87"
+                    height="53"
+                    viewBox="0 0 87 53"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.5 26.5C0.5 11.8645 12.3645 0 27 0H60C74.6355 0 86.5 11.8645 86.5 26.5C86.5 41.1355 74.6355 53 60 53H27C12.3645 53 0.5 41.1355 0.5 26.5Z"
+                      fill="#3E4148"
+                    />
+                  </svg>
+                  <div class="group-2">
+                    <div class="group-1">
+                      <svg
+                        class="group-4"
+                        width="60"
+                        height="32"
+                        viewBox="0 0 60 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M54.5 14.5V0L42 14L29.5 0L18.5 14L6 0V14.5V31.5"
+                          stroke="#202225"
+                        />
+                        <path
+                          d="M11.5 20L6 25.5L0.5 20L6 14.5L11.5 20Z"
+                          fill="#4F545C"
+                          stroke="#202225"
+                        />
+                        <path
+                          d="M60 20L54.5 14.5L49 20L54.5 25.5L60 20Z"
+                          fill="#4F545C"
+                          stroke="#202225"
+                        />
+                        <path
+                          d="M24 20L29.5 25.5L35 20L29.5 14.5L24 20Z"
+                          fill="#4F545C"
+                          stroke="#202225"
+                        />
+                      </svg>
+                      <svg
+                        class="vector-23"
+                        width="19"
+                        height="12"
+                        viewBox="0 0 19 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.5 0H18.5V12H6.5C3.18629 12 0.5 9.31371 0.5 6C0.5 2.68629 3.18629 0 6.5 0Z"
+                          fill="#4F545C"
+                          stroke="#202225"
+                        />
+                      </svg>
+                      <svg
+                        class="vector-24"
+                        width="41"
+                        height="29"
+                        viewBox="0 0 41 29"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19 14.9V8C19 3.85786 22.3579 0.5 26.5 0.5H40.5V29H5.75C2.8505 29 0.5 26.6495 0.5 23.75C0.5 20.8505 2.85051 18.5 5.75 18.5H15.4C17.3882 18.5 19 16.8882 19 14.9Z"
+                          fill="#4F545C"
+                          stroke="#202225"
+                        />
+                      </svg>
+                      <svg
+                        class="vector-25"
+                        width="94"
+                        height="59"
+                        viewBox="0 0 94 59"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0.5 32V43C0.5 51.8366 7.66344 59 16.5 59H74C85.0457 59 94 50.0457 94 39V20C94 8.95431 85.0457 0 74 0H32.5C14.8269 0 0.5 14.3269 0.5 32Z"
+                          fill="#72767D"
+                          stroke="#202225"
+                        />
+                      </svg>
+                      <svg
+                        class="vector-30"
+                        width="102"
+                        height="66"
+                        viewBox="0 0 102 66"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M85.5 0.5H18.5C8.55888 0.5 0.5 8.55888 0.5 18.5V48C0.5 57.9411 8.55888 66 18.5 66H85.5C94.3366 66 101.5 58.8366 101.5 50V16.5C101.5 7.66344 94.3366 0.5 85.5 0.5Z"
+                          fill="#72767D"
+                          stroke="#202225"
+                        />
+                      </svg>
+                      <svg
+                        class="vector-32"
+                        width="49"
+                        height="33"
+                        viewBox="0 0 49 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.5 0.5H26.5H30.5H41C45.4183 0.5 49 4.08172 49 8.5V16.5C49 25.3366 41.8366 32.5 33 32.5H16.5C7.66344 32.5 0.5 25.3366 0.5 16.5V8.5C0.5 4.08172 4.08172 0.5 8.5 0.5Z"
+                          fill="#72767D"
+                        />
+                      </svg>
+                      <svg
+                        class="vector-31"
+                        width="49"
+                        height="33"
+                        viewBox="0 0 49 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.5 0.5H26.5H30.5H41C45.4183 0.5 49 4.08172 49 8.5V16.5C49 25.3366 41.8366 32.5 33 32.5H16.5C7.66344 32.5 0.5 25.3366 0.5 16.5V8.5C0.5 4.08172 4.08172 0.5 8.5 0.5Z"
+                          fill="#B9BBBE"
+                        />
+                      </svg>
+                      <svg
+                        class="vector-29"
+                        width="23"
+                        height="22"
+                        viewBox="0 0 23 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0.5 22C2.5 11 7.5 -5.84619 19 2.99992C25.5001 8 24.5 19 0.5 22Z"
+                          fill="#72767D"
+                          stroke="#202225"
+                        />
+                      </svg>
+                      <div class="ellipse-2"></div>
+                      <svg
+                        class="vector-19"
+                        width="7"
+                        height="6"
+                        viewBox="0 0 7 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 5.5C5.33333 5 1.7 3.3 0.5 0.5"
+                          stroke="#202225"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                      <svg
+                        class="vector-22"
+                        width="65"
+                        height="59"
+                        viewBox="0 0 65 59"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M25 6V0H44.5C55.5457 0 64.5 8.95431 64.5 20V39C64.5 50.0457 55.5457 59 44.5 59H0.5V56.5C0.5 52.0817 4.08172 48.5 8.5 48.5H18.1C20.2539 48.5 22 46.7539 22 44.6V41.8C22 34.7308 27.7308 29 34.8 29H35.75C36.9926 29 38 27.9926 38 26.75C38 25.5074 36.9926 24.5 35.75 24.5H4.5C2.29086 24.5 0.5 22.7091 0.5 20.5V18C0.5 15.7909 2.29086 14 4.5 14H17C21.4183 14 25 10.4183 25 6Z"
+                          fill="#4F545C"
+                          stroke="#202225"
+                        />
+                      </svg>
+                      <svg
+                        class="vector-33"
+                        width="25"
+                        height="34"
+                        viewBox="0 0 25 34"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16.5 0.5H0.5V33.5H16.5C20.9183 33.5 24.5 29.9183 24.5 25.5V8.5C24.5 4.08172 20.9183 0.5 16.5 0.5Z"
+                          fill="#72767D"
+                        />
+                      </svg>
+                      <svg
+                        class="vector-27"
+                        width="25"
+                        height="33"
+                        viewBox="0 0 25 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0.5 0H16.5C20.9183 0 24.5 3.58172 24.5 8V25C24.5 29.4183 20.9183 33 16.5 33H0.5"
+                          stroke="#202225"
+                        />
+                      </svg>
+                      <div class="rectangle-70"></div>
+                      <div class="rectangle-71"></div>
+                      <svg
+                        class="vector-28"
+                        width="56"
+                        height="33"
+                        viewBox="0 0 56 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M26 0.5H8C3.58172 0.5 0 4.08172 0 8.5V16.5C0 25.3366 7.16344 32.5 16 32.5H39.5C48.3366 32.5 55.5 25.3366 55.5 16.5V8.5C55.5 4.08172 51.9183 0.5 47.5 0.5H37"
+                          stroke="#202225"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                      <svg
+                        class="vector-18"
+                        width="13"
+                        height="22"
+                        viewBox="0 0 13 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4.5 0.5H2.5C1.39543 0.5 0.5 1.39543 0.5 2.5V19.5C0.5 20.6046 1.39543 21.5 2.5 21.5H4.5C8.91828 21.5 12.5 17.9183 12.5 13.5V8.5C12.5 4.08172 8.91828 0.5 4.5 0.5Z"
+                          fill="#4F545C"
+                        />
+                      </svg>
+                    </div>
+                    <svg
+                      class="rectangle-6"
+                      width="15"
+                      height="13"
+                      viewBox="0 0 15 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 4C1 2.067 2.567 0.5 4.5 0.5H10.5C12.433 0.5 14 2.067 14 4V11C14 11.8284 13.3284 12.5 12.5 12.5H2.5C1.67157 12.5 1 11.8284 1 11V4Z"
+                        fill="#72767D"
+                        stroke="#202225"
+                      />
+                    </svg>
+                    <svg
+                      class="rectangle-7"
+                      width="19"
+                      height="18"
+                      viewBox="0 0 19 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 4C1 2.067 2.567 0.5 4.5 0.5H14.5C16.433 0.5 18 2.067 18 4V14C18 15.933 16.433 17.5 14.5 17.5H4.5C2.567 17.5 1 15.933 1 14V4Z"
+                        fill="#72767D"
+                        stroke="#202225"
+                      />
+                    </svg>
+                    <svg
+                      class="rectangle-8"
+                      width="9"
+                      height="8"
+                      viewBox="0 0 9 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 4C1 2.067 2.567 0.5 4.5 0.5C6.433 0.5 8 2.067 8 4C8 5.933 6.433 7.5 4.5 7.5C2.567 7.5 1 5.933 1 4Z"
+                        stroke="#202225"
+                      />
+                    </svg>
+                    <svg
+                      class="rectangle-5"
+                      width="8"
+                      height="7"
+                      viewBox="0 0 8 7"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.5 4C0.5 2.067 2.067 0.5 4 0.5C5.933 0.5 7.5 2.067 7.5 4V5C7.5 5.82843 6.82843 6.5 6 6.5H2C1.17157 6.5 0.5 5.82843 0.5 5V4Z"
+                        stroke="#202225"
+                      />
+                    </svg>
+                    <svg
+                      class="vector-6"
+                      width="9"
+                      height="1"
+                      viewBox="0 0 9 1"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0.5 0.5H8.5" stroke="#202225" />
+                    </svg>
+                    <div class="rectangle-4"></div>
+                    <svg
+                      class="rectangle-1"
+                      width="58"
+                      height="8"
+                      viewBox="0 0 58 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 2C1 1.17157 1.67157 0.5 2.5 0.5H55.5C56.3284 0.5 57 1.17157 57 2V6C57 6.82843 56.3284 7.5 55.5 7.5H2.5C1.67157 7.5 1 6.82843 1 6V2Z"
+                        fill="#3E4148"
+                        stroke="#202225"
+                      />
+                    </svg>
+                    <svg
+                      class="rectangle-2"
+                      width="9"
+                      height="11"
+                      viewBox="0 0 9 11"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 0.5H8V9C8 9.82843 7.32843 10.5 6.5 10.5H2.5C1.67157 10.5 1 9.82843 1 9V0.5Z"
+                        fill="#4F545C"
+                        stroke="#202225"
+                      />
+                    </svg>
+                    <svg
+                      class="rectangle-3"
+                      width="9"
+                      height="11"
+                      viewBox="0 0 9 11"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 0.5H8V9C8 9.82843 7.32843 10.5 6.5 10.5H2.5C1.67157 10.5 1 9.82843 1 9V0.5Z"
+                        fill="#4F545C"
+                        stroke="#202225"
+                      />
+                    </svg>
+                    <svg
+                      class="vector-3"
+                      width="29"
+                      height="22"
+                      viewBox="0 0 29 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.5 8.1V14C0.5 18.4183 4.08172 22 8.5 22H25C27.2091 22 29 20.2091 29 18V16.5C29 14.2909 27.2091 12.5 25 12.5H19.5V11.9C19.5 5.60395 14.396 0.5 8.1 0.5C3.90264 0.5 0.5 3.90264 0.5 8.1Z"
+                        fill="#4F545C"
+                        stroke="#202225"
+                      />
+                    </svg>
+                    <svg
+                      class="vector-1"
+                      width="51"
+                      height="46"
+                      viewBox="0 0 51 46"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.500039 24.5C-0.299961 11.3 6.83337 3 10.5 0.5L50.5 12.5V30C50.5 38.8366 43.3366 46 34.5 46H4.50004C2.2909 46 0.500039 44.2091 0.500039 42V24.5Z"
+                        fill="#3E4148"
+                        stroke="#202225"
+                      />
+                    </svg>
+                    <svg
+                      class="vector-2"
+                      width="29"
+                      height="22"
+                      viewBox="0 0 29 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.5 8.1V14C0.5 18.4183 4.08172 22 8.5 22H25C27.2091 22 29 20.2091 29 18V16.5C29 14.2909 27.2091 12.5 25 12.5H19.5V11.9C19.5 5.60395 14.396 0.5 8.1 0.5C3.90264 0.5 0.5 3.90264 0.5 8.1Z"
+                        fill="#4F545C"
+                        stroke="#202225"
+                      />
+                    </svg>
+                    <svg
+                      class="vector-4"
+                      width="6"
+                      height="6"
+                      viewBox="0 0 6 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M6 0.5L0.5 6" stroke="#202225" />
+                    </svg>
+                    <svg
+                      class="vector-5"
+                      width="6"
+                      height="6"
+                      viewBox="0 0 6 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0.5 0.5L6 6" stroke="#202225" />
+                    </svg>
+                    <svg
+                      class="ellipse-22"
+                      width="11"
+                      height="13"
+                      viewBox="0 0 11 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.5 6.5C10.5 7.7462 10.1766 8.96148 9.57481 9.97708C8.97299 10.9927 8.12256 11.7582 7.14163 12.1674C6.1607 12.5765 5.09795 12.609 4.10093 12.2603C3.10391 11.9116 2.22212 11.199 1.57799 10.2215C0.933855 9.24399 0.559353 8.05004 0.506484 6.80546C0.453614 5.56087 0.725 4.32742 1.28296 3.27636C1.84092 2.22531 2.65776 1.40881 3.62006 0.940254C4.58236 0.471697 5.64236 0.37433 6.65288 0.661673"
+                        stroke="#202225"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    <svg
+                      class="vector-9"
+                      width="26"
+                      height="24"
+                      viewBox="0 0 26 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19 21C18.2 25 15 24 13.5 23L0 14L8.5 0V8L17.5 4.5L18 13.5L25.5 10L20.5 19"
+                        stroke="#202225"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    <svg
+                      class="vector-39"
+                      width="79"
+                      height="75"
+                      viewBox="0 0 79 75"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M64.4207 18.2832L50.0579 9.20328C41.6902 3.91333 30.7115 5.54098 24.2385 13.0312L19.1587 18.9092C9.41637 30.1825 12.1932 47.5159 24.9696 55.1817L34.6923 61.0154C47.0694 68.4416 63.1543 63.3414 68.9907 50.14L72.0256 43.2754C76.033 34.2111 72.7978 23.579 64.4207 18.2832Z"
+                        fill="#3E4148"
+                        stroke="#202225"
+                      />
+                    </svg>
+                    <div class="ellipse-1"></div>
+                    <svg
+                      class="vector-37"
+                      width="39"
+                      height="38"
+                      viewBox="0 0 39 38"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M35.7211 15.8748L19.0257 5.05371C15.1983 2.57297 10.0746 3.78924 7.77044 7.72549L5.94829 10.8383C2.64505 16.4814 4.46768 23.7302 10.0471 27.1399L13.3898 29.1827C20.9133 33.7804 30.7385 31.4249 35.3596 23.9157L36.9521 21.3278C38.0908 19.4774 37.5443 17.0565 35.7211 15.8748Z"
+                        fill="#3E4148"
+                        stroke="#202225"
+                      />
+                    </svg>
+                    <svg
+                      class="vector-38"
+                      width="32"
+                      height="27"
+                      viewBox="0 0 32 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M26 8.5L32 14.5L10 26.5L9 25.5C4.30558 20.8056 4.30558 13.1944 9 8.5C13.6944 3.80558 21.3056 3.80558 26 8.5Z"
+                        fill="#36393F"
+                      />
+                    </svg>
+                    <svg
+                      class="vector-382"
+                      width="32"
+                      height="27"
+                      viewBox="0 0 32 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M32 14.5L26 8.5C21.3056 3.80558 13.6944 3.80558 9 8.5V8.5C4.30558 13.1944 4.30558 20.8056 9 25.5L10 26.5"
+                        stroke="#202225"
+                      />
+                    </svg>
+                    <svg
+                      class="ellipse-3"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.72713 15.9442C2.7982 13.0152 2.60097 8.46372 5.28662 5.77808C7.97227 3.09243 12.5238 3.28965 15.4527 6.21858"
+                        stroke="#202225"
+                      />
+                    </svg>
+                    <svg
+                      class="vector-7"
+                      width="25"
+                      height="17"
+                      viewBox="0 0 25 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.4999 0C12.9999 1.5 14.9999 4 18.9999 2C19.8332 3.16667 22.0999 5 24.4999 3V6.5L7.4999 16.5M7.4999 16.5C3.83323 16.5 -2.5001 14.1 1.4999 4.5M7.4999 16.5C10.2998 7.7 4.66654 4.83333 1.4999 4.5M1.4999 4.5L9 0.5"
+                        stroke="#202225"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    <svg
+                      class="vector-8"
+                      width="13"
+                      height="9"
+                      viewBox="0 0 13 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7 0H5.5C2.46243 0 0 2.46243 0 5.5V6.8C0 7.73888 0.761115 8.5 1.7 8.5H11C12.1046 8.5 13 7.60457 13 6.5V6C13 5.17157 12.3284 4.5 11.5 4.5C10.6716 4.5 10 3.82843 10 3C10 1.34315 8.65685 0 7 0Z"
+                        fill="#36393F"
+                        stroke="#202225"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div
+                  class="wumpus-is-waiting-on-friends-you-dont-have-to-though"
+                >
+                  Wumpus is waiting on friends. You dont have to, though!
+                </div>
+              </div>
+            </div>
+            <svg
+              class="divider8"
+              width="1"
+              height="964"
+              viewBox="0 0 1 964"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0H1V964H0V0Z" fill="#42464D" />
+            </svg>
+            <div class="container4">
+              <div class="header3">
+                <div class="active-now">Active Now</div>
+              </div>
+              <div class="text2">
+                <div class="it-s-quiet-for-now">It’s quiet for now...</div>
+                <div
+                  class="when-a-friend-start-an-activity-like-playing-a-game-or-hanging-out-on-voice-we-ll-show-it-here"
+                >
+                  When a friend start an activity - like playing a game or
+                  <br />
+                  hanging out on voice - we’ll show it here!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
