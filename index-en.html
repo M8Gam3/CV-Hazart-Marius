@@ -10,129 +10,148 @@
     <script defer src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script defer src="./assets/js/script.js"></script>
   </head>
-  <body>
+  <body id="body">
     <main id="app">
-      <div class="servers">
-        <div v-on:click="navOne" class="server-logo logo" id="btn_one">
-          <img class="img-logo" src="./assets/img/logo-menu.jpg" alt="Discord"/>
-        </div>
-        <div v-on:click="navTwo" class="server-logo" id="btn_two">
-          <span class="message__count">3</span>
-          <img class="img-logo" src="./assets/img/logo-portfolio.jpg" alt="server"/>
-        </div>
+      <p id="test"></p>
+      <section class="navbar mobile" id="navbar">
 
-        <!-- <div class="server-logo">
-          <span class="message__count">25</span>
-          <img class="img-logo" src="./assets/img/image-test.webp" alt="server" />
-        </div> -->
-      </div>
-
-      <div class="sidebar">
-        <div class="sidebar__top">
-          <h3 v-if="section_one">Presentation</h3>
-          <h3 v-else-if="section_two">Portfolio</h3>
-          <!-- <input type="text" placeholder="Find or start a conversation" /> -->
-        </div>
-
-
-        <div v-if="section_one" id="menu_one" class="sidebar__users">
-          <!-- <div class="sidebar__usersHeader">
-            <div class="sidebar__header">
-              <h4>Direct messages</h4>
-            </div>
-            <i class="fas fa-plus sidebar__addUser"></i>
+        <div class="servers">
+          <div id="burger-menu" class="close" onclick="mobileClose()">
+            <span></span>
+          </div>
+          <div v-on:click="navOne" class="server-logo logo" id="btn_one">
+            <img class="img-logo" src="./assets/img/logo-menu.jpg" alt="Discord"/>
+          </div>
+          <div v-on:click="navTwo" class="server-logo" id="btn_two">
+            <span class="message__count">3</span>
+            <img class="img-logo" src="./assets/img/logo-portfolio.jpg" alt="server"/>
+          </div>
+  
+          <!-- <div class="server-logo">
+            <span class="message__count">25</span>
+            <img class="img-logo" src="./assets/img/image-test.webp" alt="server" />
           </div> -->
-          <div>
-
-            <div v-on:click="navHome" class="sidebar__user" id="home_icon">
-              <div class="sidebar__user_div">
-                <span class="status"></span>
-                <img class="img-logo" src="./assets/img/menu.jpg" alt="avatar" />
+        </div>
+  
+        <div class="sidebar">
+          <div class="sidebar__top">
+            <h3 v-if="section_one">Presentation</h3>
+            <h3 v-else-if="section_two">Portfolio</h3>
+            <!-- <input type="text" placeholder="Find or start a conversation" /> -->
+          </div>
+  
+  
+          <div v-if="section_one" id="menu_one" class="sidebar__users">
+            <!-- <div class="sidebar__usersHeader">
+              <div class="sidebar__header">
+                <h4>Direct messages</h4>
               </div>
-              <h4>Profile</h4>
-            </div>
-
-            <div v-on:click="navProfil" class="sidebar__user" id="profile_icon">
-              <div class="sidebar__user_div">
-                <span class="status"></span>
-                <img class="img-logo" src="./assets/img/profil.jpg" alt="avatar" />
+              <i class="fas fa-plus sidebar__addUser"></i>
+            </div> -->
+            <div>
+  
+              <div v-on:click="navHome" class="sidebar__user" id="home_icon">
+                <div class="sidebar__user_div">
+                  <span class="status"></span>
+                  <img class="img-logo" src="./assets/img/menu.jpg" alt="avatar" />
+                </div>
+                <h4>Home</h4>
               </div>
-              <h4>Education</h4>
-            </div>
-
-            <div v-on:click="navSkills" class="sidebar__user" id="skills_icon">
-              <div class="sidebar__user_div">
-                <span class="status"></span>
-                <img class="img-logo" src="./assets/img/skills.jpg" alt="avatar" />
+  
+              <div v-on:click="navProfile" class="sidebar__user" id="profile_icon">
+                <div class="sidebar__user_div">
+                  <span class="status"></span>
+                  <img class="img-logo" src="./assets/img/profile.jpg" alt="avatar" />
+                </div>
+                <h4>Profile</h4>
               </div>
-              <h4>Competences</h4>
+  
+              <div v-on:click="navSkills" class="sidebar__user" id="skills_icon">
+                <div class="sidebar__user_div">
+                  <span class="status"></span>
+                  <img class="img-logo" src="./assets/img/skills.jpg" alt="avatar" />
+                </div>
+                <h4>Skills</h4>
+              </div>
+  
+              <div v-on:click="navExperience" class="sidebar__user" id="experience_icon">
+                <div class="sidebar__user_div">
+                  <span class="status"></span>
+                  <img class="img-logo" src="./assets/img/experience.jpg" alt="avatar" />
+                </div>
+                <h4>Experience</h4>
+              </div>
+  
             </div>
-
+          </div>
+  
+  
+          <div v-else-if="section_two" id="menu_two" class="sidebar__users">
+            <div>
+  
+              <div v-on:click="navDistrict" class="sidebar__user" id="home_icon">
+                <div class="sidebar__user_div">
+                  <span class="status"></span>
+                  <img class="img-logo" src="./assets/img/branly.png" alt="avatar" />
+                </div>
+                <h4>Branly</h4>
+              </div>
+  
+              <div v-on:click="navAddressing" class="sidebar__user" id="home_icon">
+                <div class="sidebar__user_div">
+                  <span class="status"></span>
+                  <img class="img-logo" src="./assets/img/la-manu.png" alt="avatar" />
+                </div>
+                <h4>1st year at LA MANU</h4>
+              </div>
+  
+              <!-- v-on:click="navShifumi" -->
+              <div class="sidebar__user" id="home_icon">
+                <div class="sidebar__user_div">
+                  <span class="status2"></span>
+                  <img class="img-logo" src="./assets/img/la-manu-2.png" alt="avatar" />
+                </div>
+                <h4>2nd year at LA MANU</h4>
+              </div>
+  
+            </div>
+          </div>
+  
+  
+          <div class="sidebar__profile">
+            <div>
+              <span class="status"></span>
+              <img class="img-logo" src="./assets/img/image-test.webp" alt="avatar" />
+            </div>
+            <div class="sidebar__profileInfo">
+              <h3>Marius Hazart</h3>
+              <p>marius.hazart@gmail.com</p>
+            </div>
+            <div class="sidebar__profileIcons">
+              <!-- <i class="fas fa-microphone"></i>
+              <i class="fas fa-headset"></i>
+              <i class="fas fa-cog"></i> -->
+            </div>
           </div>
         </div>
 
-
-        <div v-else-if="section_two" id="menu_two" class="sidebar__users">
-          <div>
-
-            <div v-on:click="navDistrict" class="sidebar__user" id="home_icon">
-              <div class="sidebar__user_div">
-                <span class="status"></span>
-                <img class="img-logo" src="./assets/img/branly.png" alt="avatar" />
-              </div>
-              <h4>High School Edouard Branly</h4>
-            </div>
-
-            <div v-on:click="navAddressage" class="sidebar__user" id="home_icon">
-              <div class="sidebar__user_div">
-                <span class="status"></span>
-                <img class="img-logo" src="./assets/img/la-manu.png" alt="avatar" />
-              </div>
-              <h4>1st year at LA MANU</h4>
-            </div>
-
-            <!-- v-on:click="navShifumi" -->
-            <div class="sidebar__user" id="home_icon">
-              <div class="sidebar__user_div">
-                <span class="status2"></span>
-                <img class="img-logo" src="./assets/img/la-manu-2.png" alt="avatar" />
-              </div>
-              <h4>2nd year at LA MANU</h4>
-            </div>
-
-          </div>
-        </div>
-
-
-        <div class="sidebar__profile">
-          <div>
-            <span class="status"></span>
-            <img class="img-logo" src="./assets/img/pp.jpg" alt="avatar" />
-          </div>
-          <div class="sidebar__profileInfo">
-            <h3>Marius Hazart</h3>
-            <p>marius.hazart@gmail.com</p>
-          </div>
-          <div class="sidebar__profileIcons">
-            <!-- <i class="fas fa-microphone"></i>
-            <i class="fas fa-headset"></i>
-            <i class="fas fa-cog"></i> -->
-          </div>
-        </div>
-      </div>
+      </section>
 
       <div class="chat">
         <div>
           <div class="chatHeader">
+            <div id="burger-menu" onclick="mobileOpen()">
+              <span></span>
+            </div>
             <div class="chatHeader__left">
               <span class="chatHeader__Dm"> </span>
               <div v-if="section_one">
-                <h3 v-if="home">Profile</h3>
-                <h3 v-else-if="profil">Education</h3>
-                <h3 v-else-if="skills">Competences</h3>
+                <h3 v-if="home">Home</h3>
+                <h3 v-else-if="profil">Profile</h3>
+                <h3 v-else-if="skills">Skills</h3>
               </div>
               <div v-else-if="section_two">
-                <h3 v-if="branly">High School Edouard Branly</h3>
+                <h3 v-if="branly">Branly</h3>
                 <h3 v-else-if="laManu1">1st year at LA MANU</h3>
                 <h3 v-else-if="laManu2">2nd year at LA MANU</h3>
               </div>
@@ -155,15 +174,46 @@
                   <h1>Marius Hazart</h1>
                   <hr class="hr">
                   <h2>2nd year at LA MANU,</h2>
-                  <h2>Higher education Institution for Digital Professions</h2>
+                  <h2>Higher Education Institution for Digital Professions</h2>
                 </div>
               </div>
+              
+              <chat-content>
+                <content-block0 class="content-block-50"></content-block0>
+
+                <content-block1 style="height: 275px;">
+                  <!-- <p>Numéro de téléphone : <input type="text" disabled value="06 22 09 50 44"></p> -->
+                  <p>Telephone number: +33 06 22 09 50 44</p>
+                  <p>Email: marius.hazart@gmail.com</p>
+                  <a class="home-link" href="https://github.com/M8Gam3" target="_blank"><p>Github : https://github.com/M8Gam3</p></a>
+                  <a class="home-link" href="https://www.linkedin.com/in/marius-hazart-bb5a59263/" target="_blank"><p>Linkedin : https://www.linkedin.com/in/marius-hazart-bb5a59263/</p></a>
+                </content-block1>
+                <content-block1 class="flex-column" style="height: 275px;">
+                  <p>French address: 6 bis allée des tilleuls, 80330, Longueau</p>
+                  <p>Novergian address: Malerhaugveien 20 C, 0661 Oslo</p>
+                  <div class="flex-row percent50-height aligne-center">
+                    <img src="./assets/img/france.png" alt="" class="message-img2 circle2 space-around">
+                    <div class="flex-row aligne-center" style="padding-left: 10px;">
+                      <progress class="progress-success" id="file" max="100" value="95" style="width: 200px;"></progress>
+                      <p>Native language</p>
+                    </div>
+                  </div>
+                  <div class="flex-row percent50-height aligne-center">
+                    <img src="./assets/img/uk.png" alt="" class="message-img2 circle2 space-around">
+                    <div class="flex-row aligne-center" style="padding-left: 10px;">
+                      <progress class="progress-yellow" id="file" max="100" value="60" style="width: 200px;"></progress>
+                      <p>Level b1</p>
+                    </div>
+                  </div>
+                </content-block1>
+              </chat-content>
+
             </section>
     
             <section v-else-if="profil" id="profile_content" class="home content">
               <chat-content>
                 <content-block0 class="center">
-                  <h2>Education</h2>
+                  <h2 class="profile-h2">Profile</h2>
                 </content-block0>
 
                 <content-block3>
@@ -173,42 +223,14 @@
                   <p>I am a mainly back-end oriented developer passionate about algorithms. My expertise is based on the design, development, and maintenance of server infrastructure, as well as the effective management of databases. My goal is to provide effective technology solutions that improve application performance and scalability</p>
                 </content-block2>
 
-                <!-- <content-block0 class="content-block-50"></content-block0> -->
-
-                <!-- <content-block1 style="height: 275px;"> -->
-                  <!-- <p>Numéro de téléphone : <input type="text" disabled value="06 22 09 50 44"></p> -->
-                  <!-- <p>Phone number : +33 06 22 09 50 44</p>
-                  <p>Email : marius.hazart@gmail.com</p>
-                  <p>Github : https://github.com/M8Gam3</p>
-                  <p>Linkedin : https://www.linkedin.com/in/marius-hazart-bb5a59263/</p>
-                </content-block1>
-                <content-block1 class="flex-column" style="height: 275px;">
-                  <p>French address : 6 bis allée des tilleuls, 80330, Longueau</p>
-                  <p>Novergian address : Malerhaugveien 20 C, 0661 Oslo </p>
-                  <div class="flex-row percent50-height aligne-center">
-                    <img src="./assets/img/france.png" alt="" class="message-img2 circle2 space-around">
-                    <div class="flex-row aligne-center" style="padding-left: 10px;">
-                      <progress class="progress-success" id="file" max="100" value="95" style="width: 200px;"></progress>
-                      <p>Native language/p>
-                    </div>
-                  </div>
-                  <div class="flex-row percent50-height aligne-center">
-                    <img src="./assets/img/uk.png" alt="" class="message-img2 circle2 space-around">
-                    <div class="flex-row aligne-center" style="padding-left: 10px;">
-                      <progress class="progress-yellow" id="file" max="100" value="60" style="width: 200px;"></progress>
-                      <p>Level : B1</p>
-                    </div>
-                  </div>
-                </content-block1> -->
-
                 <content-block0 class="content-block-50"></content-block0>
 
                 <content-block2 class="content-block-300">
                   <div class="p-profil">
                     <p><strong>Baccalaureate STI2D, Information Systems and Digital option (SIN), honors</strong></p>
-                    <li><a style="color: #fff;" href="https://edouard-branly.ac-amiens.fr">High School Edouard Branly</a>, Amiens, Year of graduation: 2021</li>
+                    <li><a style="color: #fff;" href="https://edouard-branly.ac-amiens.fr">Lycée Edouard Branly</a>, Amiens, Year of graduation: 2021</li>
                   </div>
-                  <p>I obtained my STI2D Baccalaureate with honors at the High School Edouard Branly. Initially enrolled in a general course with an option in Digital and Computer Sciences (NSI), I quickly discovered my true passion for digital professions. This is why I chose to reorient myself towards the STI2D sector, specialized in Information and Digital Systems (SIN). This decision solidified my desire to become a competent back-end developer with a focus on the real-world application of IT concepts.</p>
+                  <p>I obtained my STI2D Baccalaureate with honors at the Lycée Edouard Branly. Initially enrolled in a general course with an option in Digital and Computer Sciences (NSI), I quickly discovered my true passion for digital professions. This is why I chose to reorient myself towards the STI2D sector, specialized in Information and Digital Systems (SIN). This decision solidified my desire to become a competent back-end developer with a focus on the real-world application of IT concepts.</p>
                 </content-block2>
                 <content-block3 class="content-block-300">
                   <img class="message-img circle2" src="./assets/img/branly.png" alt="">
@@ -219,7 +241,7 @@
                 <content-block2 class="content-block-300">
                   <div class="p-profil">
                     <p><strong>Second year of Master in Digital Professions</strong></p>
-                    <li><a style="color: #fff;" href="https://lamanu.fr">La Manu</a>, Amiens, 70 rue des Jacobins</li>
+                    <li><a style="color: #fff;" href="https://lamanu.fr">La Manu</a>, Amiens, 70 rue des jacobins</li>
                   </div>
                   <p>I am currently in my second year of training at La Manu, where I am pursuing a Masters in Digital Professions. During this training, I acquired essential development skills, notably in JavaScript (JS), Vue.js, PHP, Python, Java, as well as Symfony for web development. I also developed skills in MySQL database management, DTP (Desktop Publishing), UX/UI (User Experience/User Interface), and web languages ​​such as HTML and CSS.</p>
                 </content-block2>
@@ -227,7 +249,9 @@
                   <img class="message-img circle2" src="./assets/img/la-manu-2.png" alt="">
                 </content-block3>
 
-                <content-block0 class="content-block-30"></content-block0>
+                <!-- <content-block0 class="content-block-30"></content-block0> -->
+
+                <hr class="hr">
                 
               </chat-content>
               
@@ -235,7 +259,7 @@
 
             <section v-else-if="skills" id="skills_content" class="skills content">
               <div class="skills-h2">
-                <div class="skills-title-div"><h2 class="skills-title">Competences</h2></div>
+                <div class="skills-title-div"><h2 class="skills-title">Skills</h2></div>
                 <div class="skills-desc"><p class="skills-desc-p">The levels represented are affiliated with my level of understanding and development in each area rather than my level of skills</p></div>
               </div>
               <article class="skills-article">
@@ -248,6 +272,20 @@
               </article>
             </section>
 
+
+            <section v-else-if="experience" id="experience_content" class="experience content">
+              <content-block1 class="content-block-portfolio">
+                <a href="https://docs.google.com/document/d/1Wb_nxQzDzcckgN0NPZOg5tkyx9mX5tYF-8GzdUR9w9o/edit?usp=sharing" class="width-100" target="_blank">
+                  <div class="portfolio-item chu-pinel">
+                    <div class="pi-info">
+                      <h3 class="pi-title">Stage Chu Pinel, Amiens</h3>
+                      <p class="pi-desc">Lors de mon stage au CHU Pinel, j'ai entrepris la modernisation d'une partie du site administrateur qui gérait les utilisateurs. Ce site était basé sur PHP 5 et nécessitait une mise à niveau pour être compatible avec les dernières versions. Mon travail principal a consisté à réviser les requêtes SQL dans les bases de données et le protocole LDAP, tout en repensant l'architecture des fichiers et des informations pour assurer une transition en douceur vers les versions plus récentes de PHP. Ce projet m'a permis d'acquérir une expérience précieuse en matière de mise à jour d'applications existantes et de gestion des données utilisateur.</p> 
+                    </div>
+                  </div>
+                </a>
+              </content-block1>
+            </section>
+
         </div>
 
         <div v-else-if="section_two" class="chat__messages" id="section_two">
@@ -257,8 +295,8 @@
                 <a href="https://github.com/M8Gam3/addressage-python" class="width-100" target="_blank">
                   <div class="portfolio-item addressage-python">
                     <div class="pi-info">
-                      <h3 class="pi-title">IP addressing</h3>
-                      <p class="pi-desc">I developed a program in Python for IP address management, allowing to convert an address to binary, identify its class, calculate the subnet mask, and display essential information. This project demonstrated my mastery of IP addresses and programming in Python.</p> 
+                      <h3 class="pi-title">Addressage</h3>
+                      <p class="pi-desc">J'ai développé un programme en Python pour la gestion d'adresses IP, permettant de convertir une adresse en binaire, identifier sa classe, calculer le masque de sous-réseau, et afficher des informations essentielles. Ce projet a démontré ma maîtrise des adresses IP et de la programmation en Python.</p> 
                     </div>
                   </div>
                 </a>
@@ -274,8 +312,8 @@
                 <a href="https://github.com/MRCThomas/Projet-Shifumi" class="width-100" target="_blank">
                   <div class="portfolio-item shifumi-js">
                     <div class="pi-info">
-                      <h3 class="pi-title">Rock Paper Scissors</h3>
-                      <p class="pi-desc">I created a functional game of Rock-Paper-Scissors using JavaScript, with the particularity of saving the scores even if the page is reloaded or the game is exited. This project allowed me to develop my understanding of JavaScript , explore local storage features and master event management for a fluid and interactive gaming experience.</p> 
+                      <h3 class="pi-title">Pierre Papier Ciseaux</h3>
+                      <p class="pi-desc">J'ai créé un jeu fonctionnel du Pierre-Papier-Ciseaux en utilisant JavaScript, avec la particularité de sauvegarder les scores même en cas de rechargement de la page ou de sortie du jeu. Ce projet m'a permis de développer ma compréhension de JavaScript, d'explorer les fonctionnalités de stockage local (localStorage) et de maîtriser la gestion des événements pour une expérience de jeu fluide et interactive.</p> 
                     </div>
                   </div>
                 </a>
@@ -287,7 +325,7 @@
                   <div class="portfolio-item disctrict-noir-python">
                     <div class="pi-info">
                       <h3 class="pi-title">District noir</h3>
-                      <p class="pi-desc">I collaborated with my team to develop the Black District game in Python, using the console to interact directly with the code. This project focused on strengthening our algorithmic logic, and it allowed us to practice working as a group on an algorithm-oriented project using the Python language.</p> 
+                      <p class="pi-desc">J'ai collaboré avec mon équipe pour développer le jeu du District Noir en Python, en utilisant la console pour interagir directement avec le code. Ce projet a été axé sur le renforcement de notre logique algorithmique, et il nous a permis de nous entraîner à travailler en groupe sur un projet orienté vers l'algorithmie en utilisant le langage Python.</p> 
                     </div>
                   </div>
                 </a>
@@ -298,7 +336,7 @@
                   <div class="portfolio-item popchill">
                     <div class="pi-info">
                       <h3 class="pi-title">PoPchill</h3>
-                      <p class="pi-desc">I created an interactive website, PopChill, which uses JavaScript to query an API and display detailed information about films, including posters, descriptions, and a favorites system. This project strengthened my skills in web development and API manipulation to deliver a personalized cinematic experience.</p> 
+                      <p class="pi-desc">J'ai créé un site web interactif, PopChill, qui utilise JavaScript pour interroger une API et afficher des informations détaillées sur les films, y compris les affiches, les descriptions, et un système de favoris. Ce projet a renforcé mes compétences en développement web et en manipulation d'API pour offrir une expérience cinématographique personnalisée.</p> 
                     </div>
                   </div>
                 </a>
@@ -308,30 +346,40 @@
                 <a href="https://github.com/M8Gam3/La-Cavernes-Aux-Infos" class="width-100" target="_blank">
                   <div class="portfolio-item lcai">
                     <div class="pi-info">
-                      <h3 class="pi-title">La caverne aux infos (The news cave)</h3>
-                      <p class="pi-desc">I designed and developed the website "La Caverne aux Infos" which presents newspaper articles dynamically using PHP and MySQL. This project involved sending SQL queries to an API to retrieve and display articles, while using a cookie system to personalize user preferences. We've also implemented a category system to organize article topics, providing a more targeted and personalized news experience.</p> 
+                      <h3 class="pi-title">La caverne aux infos</h3>
+                      <p class="pi-desc">J'ai conçu et développé le site web "La Caverne aux Infos" qui présente des articles de journaux de manière dynamique en utilisant PHP et MySQL. Ce projet a impliqué l'envoi de requêtes SQL à une API pour récupérer et afficher les articles, tout en utilisant un système de cookies pour personnaliser les préférences de l'utilisateur. Nous avons également mis en place un système de catégories pour organiser les sujets des articles, offrant ainsi une expérience d'actualités plus ciblée et personnalisée.</p> 
                     </div>
                   </div>
                 </a>
               </content-block1>
 
-              <content-block1 class="content-block-portfolio">
-                <a href="https://docs.google.com/document/d/18EeIMSAKpitA64JSisO5L8o0FsrmgnyKHeRAC4eU_78/edit?usp=sharing" class="width-100" target="_blank">
-                  <div class="portfolio-item chu-pinel">
-                    <div class="pi-info">
-                      <h3 class="pi-title">Chu Pinel internship, Amiens</h3>
-                      <p class="pi-desc">During my internship at CHU Pinel, I undertook the modernization of part of the administrator site which managed users. This site was based on PHP 5 and required an upgrade to be compatible with the latest versions. My primary work involved reviewing SQL queries in databases and the LDAP protocol, while redesigning file and information architecture to ensure a smooth transition to newer versions of PHP. This project allowed me to gain valuable experience in updating existing applications and managing user data.</p> 
-                    </div>
-                  </div>
-                </a>
-              </content-block1>
               
             </chat-content>
           </section>
 
           <section v-else-if="laManu2" id="shifumi_content" class="shifumi content">
             <chat-content>
-              
+              <content-block1 class="content-block-portfolio">
+                <a href="https://github.com/M8Gam3/Eval-salade-react" class="width-100" target="_blank">
+                  <div class="portfolio-item green">
+                    <div class="pi-info">
+                      <h3 class="pi-title">Sweet Green</h3>
+                      <p class="pi-desc"s>Pour ce projet j'ai du réadapter un site html en react</p> 
+                    </div>
+                  </div>
+                </a>
+              </content-block1>
+
+              <content-block1 class="content-block-portfolio">
+                <a href="https://github.com/M8Gam3/LaManuBox" class="width-100" target="_blank">
+                  <div class="portfolio-item manubox">
+                    <div class="pi-info">
+                      <h3 class="pi-title">La ManuBox</h3>
+                      <p class="pi-desc"></p> 
+                    </div>
+                  </div>
+                </a>
+              </content-block1>
             </chat-content>
           </section>
           
@@ -344,21 +392,3 @@
     </main>
   </body>
 </html>
-
-          <!-- <div class="message">
-              <img class="img-logo" src="./assets/img/image-test.webp" alt="avatar">
-              <div class="message__info">
-                  <h4>ManInBlack <span class="message__timestamp">04/28/2022</span></h4>
-                  <p>Hello</p>
-              </div>
-          </div> -->
-
-<!-- <div v-if="">
-  <div v-if=""></div>
-  <div v-else-if=""></div>
-  <div v-else></div>
-</div>
-<div v-else>
-  <div v-if=""></div>
-  <div v-else></div>
-</div> -->
