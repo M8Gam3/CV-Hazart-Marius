@@ -4,53 +4,82 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./vars.css" />
-    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/colors.css"/>
+    
+    <script defer src="https://kit.fontawesome.com/222cea3eed.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer src="./assets/js/app.js"></script>
+    <!-- components -->
+      <link rel="stylesheet" href="./components/content-card/content-card.css"/>
+      <!-- <script defer src="./components/content-card/content-card.js"></script> -->
+
+      <link rel="stylesheet" href="./components/icons-card/icons-card.css"/>
+      <!-- <script defer src="./components/icons-card/icons-card.js"></script> -->
+
+      <link rel="stylesheet" href="./components/portfolio-card/portfolio-card.css"/>
+      <!-- <script defer src="./components/portfolio-card/portfolio-card.js"> -->
+
+      <link rel="stylesheet" href="./components/profil-card/profil-card.css"/>
+      <!-- <script defer src="./components/profil-card/profil-card.js"></script> -->
+    <!-- components -->
 
     <title>CV-Harart Marius</title>
   </head>
-  <body>
-    <div class="discord-dark-template">
+  <body id="body">
+    <main id="app" class="discord-dark-template">
       <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="navbar">
             <!-- navbar items -->
           <div class="navbar-item">
-            <div class="navbar-cursor">
+            <!-- <div class="navbar-cursor">
               <div class="navbar-cursor-div"></div>
-            </div>
-            <div class="navbar-icon">
-              <img class="navbar-icon-img" src="navbar-icon-img0.png" />
+            </div> -->
+
+            <div class="navbar-icon" v-on:click="navOne">
+              <img class="navbar-icon-img" src="./assets/img/icons/logo-menu.jpg"/>
             </div>
           </div>
+
           <div class="navbar-divider">
             <div class="navbar-divider-frame"></div>
           </div>
+
           <div class="navbar-item">
-            <div class="navbar-cursor">
+            <!-- <div class="navbar-cursor">
               <div class="navbar-cursor-div"></div>
-            </div>
-            <div class="navbar-icon">
-              <img class="navbar-icon-img" src="navbar-icon-img1.png" />
+            </div> -->
+            <div class="navbar-icon"  v-on:click="navTwo">
+              <img class="navbar-icon-img" src="./assets/img/icons/logo-portfolio.jpg" />
             </div>
           </div>
-          <div class="navbar-item">
-            <div class="navbar-cursor">
-              <div class="navbar-cursor-div"></div>
-            </div>
-            <div class="navbar-icon">
-              <img class="navbar-icon-img" src="navbar-icon-img2.png" />
-            </div>
-          </div>
-          <div class="navbar-item">
-            <div class="navbar-cursor">
-              <div class="navbar-cursor-div"></div>
-            </div>
-            <div class="navbar-icon">
-              <img class="navbar-icon-img" src="navbar-icon-img3.png" />
-            </div>
-          </div>
+
             <!-- navbar items -->
         </div>
+
+
+
+
+
+
+
+
+
+
+
         <div class="sidebar">
           <div class="sidebar-container">
             <div class="sidebar-header">
@@ -68,49 +97,87 @@
             >
               <path d="M0 0H240V1H0V0Z" fill="#232428" />
             </svg>
-            <div class="sidebar-row">
+
+
+
+
+
+
+
+            <div class="sidebar-row" v-if="section_one">
                 <!-- sidebar items -->
-              <div class="sidebar-item">
+              <div class="sidebar-item" v-on:click="navHome">
                 <div class="sidebar-item-icon">
-                  <img class="sidebar-item-img" src="sidebar-item-img0.png" />
+                  <img class="sidebar-item-img" src="./assets/img/icons/menu.jpg" />
                 </div>
                 <div class="sidebar-item-content">
-                  <div class="sidebar-item-text">lorem ipsum</div>
+                  <div class="sidebar-item-text">Accueil</div>
                 </div>
               </div>
-              <div class="sidebar-item">
+
+              <div class="sidebar-item" v-on:click="navExperience">
                 <div class="sidebar-item-icon">
-                  <img class="sidebar-item-img" src="sidebar-item-img1.png" />
+                  <img class="sidebar-item-img" src="./assets/img/icons/skills.jpg" />
                 </div>
                 <div class="sidebar-item-content">
-                  <div class="sidebar-item-text">lorem ipsum</div>
-                </div>
-              </div>
-              <div class="sidebar-item">
-                <div class="sidebar-item-icon">
-                  <img class="sidebar-item-img" src="sidebar-item-img2.png" />
-                </div>
-                <div class="sidebar-item-content">
-                  <div class="sidebar-item-text">lorem ipsum</div>
-                </div>
-              </div>
-              <div class="sidebar-item">
-                <div class="sidebar-item-icon">
-                  <img class="sidebar-item-img" src="sidebar-item-img3.png" />
-                </div>
-                <div class="sidebar-item-content">
-                  <div class="sidebar-item-text">lorem ipsum</div>
+                  <div class="sidebar-item-text">Experience</div>
                 </div>
               </div>
                 <!-- sidebar items -->
             </div>
+
+
+
+
+            <div class="sidebar-row" v-else-if="section_two">
+              <!-- sidebar items -->
+            <div class="sidebar-item" v-on:click="navBranly">
+              <div class="sidebar-item-icon">
+                <img class="sidebar-item-img" src="./assets/img/content/branly.png" />
+              </div>
+              <div class="sidebar-item-content">
+                <div class="sidebar-item-text">Branly</div>
+              </div>
+            </div>
+
+            <div class="sidebar-item" v-on:click="navManu1">
+              <div class="sidebar-item-icon">
+                <img class="sidebar-item-img" src="./assets/img/content/la-manu.png" />
+              </div>
+              <div class="sidebar-item-content">
+                <div class="sidebar-item-text">1re année a LA MANU</div>
+              </div>
+            </div>
+
+            <div class="sidebar-item" v-on:click="navManu2">
+              <div class="sidebar-item-icon">
+                <img class="sidebar-item-img" src="./assets/img/content/la-manu-2.png" />
+              </div>
+              <div class="sidebar-item-content">
+                <div class="sidebar-item-text">2ème année a LA MANU</div>
+              </div>
+            </div>
+              <!-- sidebar items -->
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
           </div>
           <div class="sidebar-footer">
             <div class="sidebar-footer-user">
               <div class="sidebar-footer-user-frame">
                 <img
                   class="sidebar-footer-user-img"
-                  src="sidebar-footer-user-img0.png"
+                  src="./assets/img/profil/pp-discord.jpg"
                 />
               </div>
               <div class="sidebar-footer-user-icon"></div>
@@ -166,26 +233,50 @@
           <div class="content-header">
             <div class="content-header-container">
               <div class="content-header-page">
-                <div class="content-header-page-icon">
+
+
+                <div class="content-header-page-icon" v-if="section_one">
                   <img
                     class="content-header-page-img"
-                    src="content-header-page-img0.png"
+                    src="./assets/img/icons/logo-menu.jpg"
                   />
+                  <!-- <img class="content-header-page-img" v-if="home" src="./assets/img/icons/logo-menu.jpg"/>
+                  <img class="content-header-page-img" v-else-if="profil" src="./assets/img/icons/profil.jpg"/>
+                  <img class="content-header-page-img" v-else-if="skills" src="./assets/img/icons/skills.jpg"/> -->
                 </div>
-                <div class="content-header-page-content">Lorem ipsum</div>
+                <div class="content-header-page-icon" v-else-if="section_two">
+                  <img
+                    class="content-header-page-img"
+                    src="./assets/img/icons/logo-portfolio.jpg"
+                  />
+                  <!-- <img class="content-header-page-img" v-if="branly" src="./assets/img/content/branly.png"/>
+                  <img class="content-header-page-img" v-else-if="laManu1" src="./assets/img/content/la-manu.png"/>
+                  <img class="content-header-page-img" v-else-if="laManu2" src="./assets/img/content/la-manu-2.png"/> -->
+                </div>
+
+
+                <div class="content-header-page-content" v-if="section_one">
+                  <div v-if="home">Profil</div>
+                  <div v-else-if="experience">Experience</div>
+                </div>
+                <div class="content-header-page-content" v-else-if="section_two">
+                  <div v-if="branly">Branly</div>
+                  <div v-else-if="laManu1">1re année a LA MANU</div>
+                  <div v-else-if="laManu2">2ème année a LA MANU</div>
+                </div>
               </div>
               <div class="content-header-control">
                 <!-- content items -->
                 <div class="content-header-control-icon">
                   <img
                     class="content-header-control-icon-img"
-                    src="content-header-control-icon-img0.png"
+                    src="./assets/img/icons/france.png"
                   />
                 </div>
                 <div class="content-header-control-icon">
                   <img
                     class="content-header-control-icon-img"
-                    src="content-header-control-icon-img1.png"
+                    src="./assets/img/icons/uk.png"
                   />
                 </div>
                 <div class="content-header-control-divider">
@@ -194,7 +285,7 @@
                 <div class="content-header-control-user">
                   <img
                     class="content-header-control-user-img"
-                    src="content-header-control-user-img0.png"
+                    src="./assets/img/profil/pp-discord.jpg"
                   />
                 </div>
                 <!-- content items -->
@@ -202,6 +293,7 @@
                   <div class="content-header-control-divider-content"></div>
                 </div>
                 <svg
+                  onclick="mobileOpen()"
                   class="content-header-control-menu"
                   width="25"
                   height="26"
@@ -217,9 +309,58 @@
               </div>
             </div>
           </div>
-          <div class="container-content"></div>
+
+
+
+
+
+          <section v-if="section_one" class="container-content">
+
+            <article class="home-content" v-if="home">
+              home
+            </article>
+
+            <article class="skills-content" v-if="experience">
+              experience
+              <div class="skills-content-frame-1"></div>
+              <div class="skills-content-frame-2"></div>
+            </article>
+
+          </section>
+
+          <section v-if="section_two" class="container-content">
+
+            <article class="portfolio-content" v-if="branly">
+              branly
+            </article>
+
+            <article class="portfolio-content" v-if="laManu1">
+              laManu1
+            </article>
+
+            <article class="portfolio-content" v-if="laManu2">
+              laManu2
+            </article>
+
+          </section>
+
+
+          <!-- <div class="container-content">
+
+          </div> -->
+
+
+
+
+
+
+
+
+
+
+
         </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
