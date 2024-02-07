@@ -23,6 +23,9 @@
 
       <link rel="stylesheet" href="./components/profil-card/profil-card.css"/>
       <!-- <script defer src="./components/profil-card/profil-card.js"></script> -->
+
+      <link rel="stylesheet" href="./components/presentation-card/presentation-card.css"/>
+      <!-- <script defer src="./components/presentation-card/presentation-card.js"></script> -->
     <!-- components -->
 
     <title>CV-Harart Marius</title>
@@ -41,7 +44,7 @@
 
 
 
-
+        
         <div class="navbar">
             <!-- navbar items -->
           <div class="navbar-item">
@@ -314,21 +317,26 @@
 
 
 
-          <section v-if="section_one" class="container-content">
+          <section v-if="section_one" class="content-container">
 
             <article class="home-content" v-if="home">
               home
             </article>
 
             <article class="skills-content" v-if="experience">
-              experience
-              <div class="skills-content-frame-1"></div>
-              <div class="skills-content-frame-2"></div>
+              <div class="skills-content-frame">
+                <icons-card></icons-card>
+                <icons-card></icons-card>
+                <icons-card></icons-card>
+              </div>
+              <div class="skills-content-frame">
+                <content-card class="color-3"></content-card>
+              </div>
             </article>
 
           </section>
 
-          <section v-if="section_two" class="container-content">
+          <section v-if="section_two" class="content-container">
 
             <article class="portfolio-content" v-if="branly">
               branly
@@ -345,11 +353,9 @@
           </section>
 
 
-          <!-- <div class="container-content">
+          <!-- <div class="content-container">
 
           </div> -->
-
-
 
 
 
