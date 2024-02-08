@@ -325,10 +325,13 @@
 
             <article class="skills-content" v-if="experience">
               <div class="skills-content-frame">
-                <icons-card></icons-card>
-                <icons-card></icons-card>
-                <icons-card></icons-card>
-              </div>
+                <icons-card v-for="(categorySkills, categoryName) in skills_data" :key="categoryName" :name="categoryName" :url="categorySkills.img">
+                  <icon-card-skill v-for="item in categorySkills.content" :url="item.img" :key="item.name">{{skills_data}}</icon-card-skill>
+                </icons-card>
+                <!-- <div v-for="(categorySkills, categoryName) in skills_data" :key="categoryName">
+                  <div v-for="item in categorySkills" :url="item.img" :key="item.name">{{item}}</div>
+                </div>
+              </div>               -->
               <div class="skills-content-frame">
                 <content-card class="color-3"></content-card>
               </div>
