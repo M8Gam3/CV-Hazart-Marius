@@ -7,6 +7,11 @@
 
     <link rel="stylesheet" href="./assets/css/style.css"/>
     <link rel="stylesheet" href="./assets/css/colors.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <script defer src="https://kit.fontawesome.com/222cea3eed.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -324,19 +329,32 @@
 
 
           <section v-if="section_one" class="content-container">
-
             <article class="home-content" v-if="home">
-              home
+              <content-card v-for="(value, key) in content_data" 
+                :img="value.img" 
+                :banner="value.banner"
+                :date="value.date"
+                :color="value.color"
+                :title1="value.title1"
+                :text1="value.text1">
+              </content-card>
             </article>
 
             <article class="skills-content" v-if="experience">
               <div class="skills-content-frame">
                 <icons-card v-for="(categorySkills, categoryName) in skills_data" :key="categoryName" :name="categoryName" :url="categorySkills.img">
                   <icon-card-skill v-for="item in categorySkills.content" :url="item.img" :key="item.name">{{skills_data}}</icon-card-skill>
-                <!-- </icons-card> -->
+                </icons-card>
               </div>
               <div class="skills-content-frame">
-                <content-card class="color-3"></content-card>
+                <portfolio-card v-for="(value, key) in (portfolio_data.experience)"
+                  :name="value.name"
+                  :img="value.img"
+                  :link="value.link"
+                  :desc="value.desc"
+                  class="portfolio-card-fullw"
+                  >
+                </portfolio-card>
               </div>
             </article>
 
@@ -345,15 +363,33 @@
           <section v-if="section_two" class="content-container">
 
             <article class="portfolio-content" v-if="branly">
-              branly
+              <portfolio-card v-for="(value, key) in (portfolio_data.portfolio).branly" 
+                :name="value.name"
+                :img="value.img"
+                :link="value.link"
+                :desc="value.desc"
+                >
+              </portfolio-card>
             </article>
 
             <article class="portfolio-content" v-if="laManu1">
-              laManu1
+              <portfolio-card v-for="(value, key) in (portfolio_data.portfolio).lamanu1" 
+                :name="value.name"
+                :img="value.img"
+                :link="value.link"
+                :desc="value.desc"
+                >
+              </portfolio-card>
             </article>
 
             <article class="portfolio-content" v-if="laManu2">
-              laManu2
+              <portfolio-card v-for="(value, key) in (portfolio_data.portfolio).lamanu2" 
+                :name="value.name"
+                :img="value.img"
+                :link="value.link"
+                :desc="value.desc"
+                >
+              </portfolio-card>
             </article>
 
           </section>
