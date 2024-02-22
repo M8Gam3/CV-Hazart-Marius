@@ -418,7 +418,7 @@ Vue.component('profil-card', {
     <div class="home-card">
     <div class="home-card-header">
       <div class="home-card-header-banner">
-        <img class="home-card-banner-img" src="home-card-banner-img0.png" />
+        <img class="home-card-banner-img" :src="banner" />
       </div>
       <div class="home-card-title">{{username}}</div>
     </div>
