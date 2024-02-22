@@ -1,0 +1,196 @@
+.portfolio-card,
+.portfolio-card * {
+  box-sizing: border-box;
+}
+.portfolio-card {
+  background: #232428;
+  border-radius: 0.3125rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 18.5rem;
+  /* height: 24rem; */
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-card-fullw {
+  background: #232428;
+  border-radius: 0.3125rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 28rem;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-card-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 8.75rem;
+  position: relative;
+}
+.portfolio-card-banner-img {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  object-fit: cover;
+}
+.portfolio-card-content {
+  padding: 0.9375rem 0rem 0.9375rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  gap: 0.7rem;
+}
+.portfolio-card-container {
+  padding: 0rem 0.875rem 0rem 0.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3125rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-card-head {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.portfolio-card-head-icon {
+  flex-shrink: 0;
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  overflow: visible;
+}
+.portfolio-card-head-tittle {
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+}
+.portfolio-card-head-text {
+  color: #f2f3f5;
+  text-align: left;
+  font-family: "Noto Sans SemiBold", sans-serif;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.portfolio-card-container-content {
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-card-container-text {
+  color: #b5bac1;
+  text-align: left;
+  font-family: "Noto Sans SemiBoldRegular", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+  flex: 1;
+}
+.portfolio-card-footer {
+  margin: -0.0625rem 0 0 0;
+  padding: 0rem 0.875rem 0rem 0.875rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: center;
+  justify-content: flex-end;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.portfolio-card-footer-button {
+  background: #34373c;
+  border-radius: 0.1875rem;
+  padding: 0.4375rem 0.5625rem 0.4375rem 0.5625rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
+}
+.portfolio-card-footer-button-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  position: relative;
+  overflow: visible;
+}
+.portfolio-card-footer-button-content {
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.portfolio-card-footer-button-content-text {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Noto Sans Medium", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Media query for mobile */
+@media (max-width: 1000px) {
+  .portfolio-card {
+    width: 100%;
+    min-width: none;
+  }
+}

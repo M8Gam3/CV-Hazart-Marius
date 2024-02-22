@@ -1,0 +1,88 @@
+{
+    "Compétences principales" : {
+        "img" : "./assets/img/skills/Principale.png",
+        "content" : [
+            {
+                "name" : "Python",
+                "img" : "./assets/img/skills/python-logo.png"
+                
+            },
+            {
+                "name" : "Looping",
+                "img" : "./assets/img/skills/Looping-logo.png"
+            },   
+            {
+                "name" : "SQL",
+                "img" : "./assets/img/skills/Sql-logo.png"
+            },
+            {
+                "name" : "Vue.js",
+                "img" : "./assets/img/skills/Vue.js-logo.png"
+            },
+            {
+                "name" : "JavaScript",
+                "img" : "./assets/img/skills/Js-logo.png"
+            },
+            {
+                "name" : "PHP",
+                "img" : "./assets/img/skills/PHP-logo.png"
+            }
+        ]
+    },
+    "Compétences secondaires" : {
+        "img" : "./assets/img/skills/Secondaire.png",
+        "content" : [
+            {
+                "name" : "HTML",
+                "img" : "./assets/img/skills/HTML-logo.png"
+                
+            },
+            {
+                "name" : "CSS",
+                "img" : "./assets/img/skills/CSS-logo.png"
+            },
+            {
+                "name" : "SASS",
+                "img" : "./assets/img/skills/Sass-logo.png"
+            }, 
+            {
+                "name" : "React",
+                "img" : "./assets/img/skills/React-logo.png"
+            },
+            {
+                "name" : "Symfony",
+                "img" : "./assets/img/skills/Symfony-logo.png"
+            },
+            {
+                "name" : "Java",
+                "img" : "./assets/img/skills/Java-logo.png"
+            },
+            {
+                "name" : "Docker",
+                "img" : "./assets/img/skills/docker-logo.png"
+            }
+        ]
+    },
+    "Autres compétences" : {
+        "img" : "./assets/img/skills/Autre.png",
+        "content" : [
+            {
+                "name" : "Trello",
+                "img" : "./assets/img/skills/trello-logo.png"
+            },
+            {
+                "name" : "Figma",
+                "img" : "./assets/img/skills/figma-logo.png"
+                
+            },
+            {
+                "name" : "Wordpress",
+                "img" : "./assets/img/skills/wordpress-logo.png"
+            },
+            {
+                "name" : "Prestashop",
+                "img" : "./assets/img/skills/prestashop-logo.png"
+            }
+        ]
+    }
+}
