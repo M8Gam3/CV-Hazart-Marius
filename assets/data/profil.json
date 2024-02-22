@@ -1,0 +1,35 @@
+{
+    "banner": "",
+    "icons": [
+        {
+            "name": "python",
+            "img": "./assets/img/skills/python-logo.png"
+        },
+        {
+            "name": "Sql",
+            "img": "./assets/img/skills/Sql-logo.png"
+        }
+    ],
+    "name": "Marius Hazart",
+    "username": "#m8gam3",
+    "about": "",
+    "roles": [
+        {
+            "name": "Python",
+            "color": "color-3"
+        },
+        {
+            "name": "Data",
+            "color": "color-2"
+        },
+        {
+            "name": "SQL",
+            "color": "color-2"
+        },
+        {
+            "name": "Javascript",
+            "color": "color-2"
+        }
+    ],
+    "note": ""
+}

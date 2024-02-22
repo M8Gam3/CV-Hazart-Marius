@@ -1,0 +1,28 @@
+{
+    "username": "Marius Hazart",
+    "banner": "./assets/img/profil/pp.webp",
+    "school": "2ème année de Master à LA MANU, Établissement d'Enseignement Supérieur des Métiers du Numérique",
+    "work": "Aspirant Architecte Data",
+    "addresse": [
+        {
+            "name": "Française",
+            "add": "6 bis allée des tilleuls, 80330, Longueau"
+        },
+        {
+            "name": "Novergienne",
+            "add": "Malerhaugveien 20 C, 0661 Oslo"
+        }
+    ],
+    "language": [
+        {
+            "name": "Francais",
+            "level": "Maternelle",
+            "img": "./assets/img/icons/france.png"
+        },
+        {
+            "name": "Anglais",
+            "level": "B1",
+            "img": "./assets/img/icons/uk.png"
+        }
+    ]
+}
