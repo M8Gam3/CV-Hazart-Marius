@@ -55,6 +55,12 @@
                 "link" : "",
                 "desc" : "Lorem Ispum"
             }
+            {
+                "name" : "Rhine-Lab Symfony",
+                "img" : "",
+                "link" : "https://github.com/M8Gam3/Rhine-Lab-symfony",
+                "desc" : "Lorem Ispum"
+            }
         ]
     }
 }
