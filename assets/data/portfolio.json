@@ -2,7 +2,7 @@
     "experience" : {
         "Pinel" : {
             "name" : "Stage Chu Pinel, Amiens",
-            "img" : "",
+            "img" : "../img/portfolio/chu-pinel.png",
             "link" : "",
             "desc" : "Lors de mon stage au CHU Pinel, j'ai entrepris la modernisation d'une partie du site administrateur qui gérait les utilisateurs. Ce site était basé sur PHP 5 et nécessitait une mise à niveau pour être compatible avec les dernières versions. Mon travail principal a consisté à réviser les requêtes SQL dans les bases de données et le protocole LDAP, tout en repensant l'architecture des fichiers et des informations pour assurer une transition en douceur vers les versions plus récentes de PHP. Ce projet m'a permis d'acquérir une expérience précieuse en matière de mise à jour d'applications existantes et de gestion des données utilisateur."
         }
@@ -11,7 +11,7 @@
         "branly" : [
             {
             "name" : "Addressage",
-            "img" : "url",
+            "img" : "../img/portfolio/addressage-python.png",
             "link" : "",
             "desc" : "J'ai développé un programme en Python pour la gestion d'adresses IP, permettant de convertir une adresse en binaire, identifier sa classe, calculer le masque de sous-réseau, et afficher des informations essentielles. Ce projet a démontré ma maîtrise des adresses IP et de la programmation en Python."
             }
@@ -19,25 +19,25 @@
         "lamanu1" : [
             {
             "name" : "Shifumi",
-            "img" : "url",
+            "img" : "../img/portfolio/shifumi-js.png",
             "link" : "",
             "desc" : "J'ai créé un jeu fonctionnel du Pierre-Papier-Ciseaux en utilisant JavaScript, avec la particularité de sauvegarder les scores même en cas de rechargement de la page ou de sortie du jeu. Ce projet m'a permis de développer ma compréhension de JavaScript, d'explorer les fonctionnalités de stockage local (localStorage) et de maîtriser la gestion des événements pour une expérience de jeu fluide et interactive."
             },
             {
                 "name" : "PopChill",
-                "img" : "url",
+                "img" : "../img/portfolio/popchill.png",
                 "link" : "",
                 "desc" : "J'ai créé un site web interactif, PopChill, qui utilise JavaScript pour interroger une API et afficher des informations détaillées sur les films, y compris les affiches, les descriptions, et un système de favoris. Ce projet a renforcé mes compétences en développement web et en manipulation d'API pour offrir une expérience cinématographique personnalisée."
             },
             {
                 "name" : "District noir",
-                "img" : "url",
+                "img" : "../img/portfolio/district-noir-python.png",
                 "link" : "",
                 "desc" : "J'ai collaboré avec mon équipe pour développer le jeu du District Noir en Python, en utilisant la console pour interagir directement avec le code. Ce projet a été axé sur le renforcement de notre logique algorithmique, et il nous a permis de nous entraîner à travailler en groupe sur un projet orienté vers l'algorithmie en utilisant le langage Python."
             },
             {
                 "name" : "La caverne aux infos",
-                "img" : "url",
+                "img" : "../img/portfolio/lcai.png",
                 "link" : "",
                 "desc" : "J'ai conçu et développé le site web ''La Caverne aux Info'' qui présente des articles de journaux de manière dynamique en utilisant PHP et MySQL. Ce projet a impliqué l'envoi de requêtes SQL à une API pour récupérer et afficher les articles, tout en utilisant un système de cookies pour personnaliser les préférences de l'utilisateur. Nous avons également mis en place un système de catégories pour organiser les sujets des articles, offrant ainsi une expérience d'actualités plus ciblée et personnalisée."
             }
@@ -54,7 +54,7 @@
                 "img" : "url",
                 "link" : "",
                 "desc" : "Lorem Ispum"
-            }
+            },
             {
                 "name" : "Rhine-Lab Symfony",
                 "img" : "",

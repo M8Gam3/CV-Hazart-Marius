@@ -1,23 +1,23 @@
 {
     "Profil" : {
-        "img": "",
-        "banner": "",
+        "img": "../img/profil/pp-discord.jpg",
+        "banner": "../img/profil/pp-discord.webp",
         "date": "now",
         "color": "color-2",
         "title1": "Aspirant architecte-data",
         "text1": "Je suis un développeur principalement orienté back-end passionné d’algorithmie. Mon expertise repose sur la conception, le développement, et la maintenance de l'infrastructure serveur, ainsi que sur la gestion efficace des bases de données. Mon objectif est de fournir des solutions technologiques efficaces qui améliorent les performances et l'évolutivité des applications"
     },
     "STI2D" : {
-        "img": "",
-        "banner": "",
+        "img": "../img/content/branly.png",
+        "banner": "../img/content/branly.png",
         "date": "2022",
         "color": "color-5",
         "title1": "Baccalauréat STI2D, option Systèmes d'Information et Numérique (SIN), mention Bien",
         "text1": "J'ai obtenu mon Baccalauréat STI2D avec mention Bien au Lycée Edouard Branly. Initialement inscrit en filière générale avec une option en Numérique et Sciences Informatiques (NSI), j'ai rapidement découvert ma véritable passion pour les métiers du numérique. C'est pourquoi j'ai choisi de me réorienter vers la filière STI2D, spécialisée en Systèmes d'Information et Numérique (SIN). Cette décision a renforcé mon désir de devenir un développeur back-end compétent en mettant l'accent sur l'application concrète des concepts informatiques."
     },
     "LaManu" : {
-        "img": "",
-        "banner": "",
+        "img": "../img/content/la-manu.png",
+        "banner": "../img/content/la-manu-2.png",
         "date": "2024",
         "color": "color-1",
         "title1": "Deuxième année de Master en Métiers du Numérique",

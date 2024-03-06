@@ -5,12 +5,12 @@
     "work": "Aspirant Architecte Data",
     "addresse": [
         {
-            "name": "Française",
-            "add": "6 bis allée des tilleuls, 80330, Longueau"
+            "name": "France",
+            "add": "Longueau/Amien"
         },
         {
-            "name": "Novergienne",
-            "add": "Malerhaugveien 20 C, 0661 Oslo"
+            "name": "Norvège",
+            "add": "Oslo"
         }
     ],
     "language": [
