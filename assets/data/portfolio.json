@@ -1,8 +1,8 @@
-{
+{ "fr" : {
     "experience" : {
         "Pinel" : {
             "name" : "Stage Chu Pinel, Amiens",
-            "img" : "../img/portfolio/chu-pinel.png",
+            "img" : "./assets/img/portfolio/chu-pinel.png",
             "link" : "",
             "desc" : "Lors de mon stage au CHU Pinel, j'ai entrepris la modernisation d'une partie du site administrateur qui gérait les utilisateurs. Ce site était basé sur PHP 5 et nécessitait une mise à niveau pour être compatible avec les dernières versions. Mon travail principal a consisté à réviser les requêtes SQL dans les bases de données et le protocole LDAP, tout en repensant l'architecture des fichiers et des informations pour assurer une transition en douceur vers les versions plus récentes de PHP. Ce projet m'a permis d'acquérir une expérience précieuse en matière de mise à jour d'applications existantes et de gestion des données utilisateur."
         }
@@ -11,56 +11,123 @@
         "branly" : [
             {
             "name" : "Addressage",
-            "img" : "../img/portfolio/addressage-python.png",
-            "link" : "",
+            "img" : "./assets/img/portfolio/addressage-python.png",
+            "link" : "https://github.com/M8Gam3/addressage-python",
             "desc" : "J'ai développé un programme en Python pour la gestion d'adresses IP, permettant de convertir une adresse en binaire, identifier sa classe, calculer le masque de sous-réseau, et afficher des informations essentielles. Ce projet a démontré ma maîtrise des adresses IP et de la programmation en Python."
             }
         ],
         "lamanu1" : [
             {
             "name" : "Shifumi",
-            "img" : "../img/portfolio/shifumi-js.png",
-            "link" : "",
+            "img" : "./assets/img/portfolio/shifumi-js.png",
+            "link" : "https://github.com/M8Gam3/shifumi-cyberpunk",
             "desc" : "J'ai créé un jeu fonctionnel du Pierre-Papier-Ciseaux en utilisant JavaScript, avec la particularité de sauvegarder les scores même en cas de rechargement de la page ou de sortie du jeu. Ce projet m'a permis de développer ma compréhension de JavaScript, d'explorer les fonctionnalités de stockage local (localStorage) et de maîtriser la gestion des événements pour une expérience de jeu fluide et interactive."
             },
             {
                 "name" : "PopChill",
-                "img" : "../img/portfolio/popchill.png",
-                "link" : "",
+                "img" : "./assets/img/portfolio/popchill.png",
+                "link" : "https://github.com/M8Gam3/Popchill",
                 "desc" : "J'ai créé un site web interactif, PopChill, qui utilise JavaScript pour interroger une API et afficher des informations détaillées sur les films, y compris les affiches, les descriptions, et un système de favoris. Ce projet a renforcé mes compétences en développement web et en manipulation d'API pour offrir une expérience cinématographique personnalisée."
             },
             {
                 "name" : "District noir",
-                "img" : "../img/portfolio/district-noir-python.png",
-                "link" : "",
+                "img" : "./assets/img/portfolio/district-noir-python.png",
+                "link" : "https://github.com/M8Gam3/district-noir-python",
                 "desc" : "J'ai collaboré avec mon équipe pour développer le jeu du District Noir en Python, en utilisant la console pour interagir directement avec le code. Ce projet a été axé sur le renforcement de notre logique algorithmique, et il nous a permis de nous entraîner à travailler en groupe sur un projet orienté vers l'algorithmie en utilisant le langage Python."
             },
             {
                 "name" : "La caverne aux infos",
-                "img" : "../img/portfolio/lcai.png",
-                "link" : "",
+                "img" : "./assets/img/portfolio/lcai.png",
+                "link" : "https://github.com/M8Gam3/La-Cavernes-Aux-Infos",
                 "desc" : "J'ai conçu et développé le site web ''La Caverne aux Info'' qui présente des articles de journaux de manière dynamique en utilisant PHP et MySQL. Ce projet a impliqué l'envoi de requêtes SQL à une API pour récupérer et afficher les articles, tout en utilisant un système de cookies pour personnaliser les préférences de l'utilisateur. Nous avons également mis en place un système de catégories pour organiser les sujets des articles, offrant ainsi une expérience d'actualités plus ciblée et personnalisée."
             }
         ],
         "lamanu2" : [
             {
                 "name" : "Evelyne",
-                "img" : "url",
-                "link" : "",
-                "desc" : "Lorem Ipsum"
+                "img" : "",
+                "link" : "https://github.com/M8Gam3/eval-lamanu-2/tree/evelyne-21",
+                "desc" : "Développeur Python expérimenté, spécialisé en manipulation et visualisation de données avec NumPy et Matplotlib. Capable de répondre aux exigences des projets et de collaborer efficacement en équipe. Maîtrise des solutions basées sur les données pour des résultats précis et significatifs."
             },
             {
                 "name" : "SaladBowl",
-                "img" : "url",
-                "link" : "",
-                "desc" : "Lorem Ispum"
+                "img" : "",
+                "link" : "https://github.com/M8Gam3/Eval-salade-react",
+                "desc" : "J'ai utilisé ReactJS pour moderniser l'interactivité du site web. La méthodologie BEM a été appliquée pour maintenir une structure CSS claire et organisée. J'ai créé des composants React pour chaque élément du site HTML et intégré les données dynamiques à partir d'un fichier JSON pour générer les cartes du menu. Enfin, j'ai géré le projet avec Git pour versionner et partager le code de manière collaborative."
             },
             {
                 "name" : "Rhine-Lab Symfony",
                 "img" : "",
                 "link" : "https://github.com/M8Gam3/Rhine-Lab-symfony",
-                "desc" : "Lorem Ispum"
+                "desc" : "Ce projet implique la création d'un site web corporate avec Symfony. L'objectif est de présenter l'entreprise et ses services, tout en facilitant le contact avec les utilisateurs. Les spécifications incluent des pages d'accueil, \"À propos\", \"Service\" et \"Contact\" avec formulaire, avec l'utilisation de Symfony. Les livrables comprennent le code source et la version déployée du site. Les critères d'acceptation portent sur la fonctionnalité, l'ergonomie et la responsivité du site."
             }
         ]
     }
+},
+"en" : {
+    "experience": {
+        "Pinel": {
+            "name": "Internship at Pinel Hospital, Amiens",
+            "img": "./assets/img/portfolio/chu-pinel.png",
+            "link": "",
+            "desc": "During my internship at Pinel Hospital, I undertook the modernization of a portion of the administrative site responsible for managing users. This site was based on PHP 5 and required an upgrade to be compatible with the latest versions. My main task involved revising SQL queries in the databases and the LDAP protocol, while redesigning file architecture and information to ensure a smooth transition to newer versions of PHP. This project provided me with valuable experience in updating existing applications and managing user data."
+        }
+    },
+    "portfolio": {
+        "branly": [
+            {
+                "name": "IP Addressing",
+                "img": "./assets/img/portfolio/addressage-python.png",
+                "link": "https://github.com/M8Gam3/addressage-python",
+                "desc": "I developed a Python program for IP address management, allowing for converting an address to binary, identifying its class, calculating the subnet mask, and displaying essential information. This project demonstrated my mastery of IP addresses and Python programming."
+            }
+        ],
+        "lamanu1": [
+            {
+                "name": "Rock Paper Scissors",
+                "img": "./assets/img/portfolio/shifumi-js.png",
+                "link": "https://github.com/M8Gam3/shifumi-cyberpunk",
+                "desc": "I created a functional Rock Paper Scissors game using JavaScript, with the feature of saving scores even upon page reload or game exit. This project helped me enhance my understanding of JavaScript, explore local storage (localStorage) functionalities, and master event handling for a smooth and interactive gaming experience."
+            },
+            {
+                "name": "PopChill",
+                "img": "./assets/img/portfolio/popchill.png",
+                "link": "https://github.com/M8Gam3/Popchill",
+                "desc": "I developed an interactive website, PopChill, using JavaScript to query an API and display detailed information about movies, including posters, descriptions, and a favorites system. This project strengthened my skills in web development and API manipulation to offer a personalized cinematic experience."
+            },
+            {
+                "name": "Dark District",
+                "img": "./assets/img/portfolio/district-noir-python.png",
+                "link": "https://github.com/M8Gam3/district-noir-python",
+                "desc": "I collaborated with my team to develop the Dark District game in Python, using the console to directly interact with the code. This project focused on enhancing our algorithmic logic and allowed us to practice working in a group on an algorithm-oriented project using the Python language."
+            },
+            {
+                "name": "The News Cave",
+                "img": "./assets/img/portfolio/lcai.png",
+                "link": "https://github.com/M8Gam3/La-Cavernes-Aux-Infos",
+                "desc": "I designed and developed the website 'The News Cave,' which dynamically presents newspaper articles using PHP and MySQL. This project involved sending SQL queries to an API to retrieve and display articles, while using a cookie system to personalize user preferences. We also implemented a category system to organize article topics, offering a more targeted and personalized news experience."
+            }
+        ],
+        "lamanu2": [
+            {
+                "name": "Evelyne",
+                "img": "",
+                "link": "https://github.com/M8Gam3/eval-lamanu-2/tree/evelyne-21",
+                "desc": "Experienced Python developer, specializing in data manipulation and visualization with NumPy and Matplotlib. Capable of meeting project requirements and effectively collaborating in a team. Proficient in data-driven solutions for precise and meaningful results."
+            },
+            {
+                "name": "SaladBowl",
+                "img": "",
+                "link": "https://github.com/M8Gam3/Eval-salade-react",
+                "desc": "I used ReactJS to modernize the interactivity of the website. The BEM methodology was applied to maintain a clear and organized CSS structure. I created React components for each HTML element of the site and integrated dynamic data from a JSON file to generate menu cards. Finally, I managed the project with Git for collaborative versioning and sharing of code."
+            },
+            {
+                "name": "Rhine-Lab Symfony",
+                "img": "",
+                "link": "https://github.com/M8Gam3/Rhine-Lab-symfony",
+                "desc": "This project involves creating a corporate website with Symfony. The objective is to present the company and its services while facilitating contact with users. Specifications include home, 'About', 'Service', and 'Contact' pages with a form, utilizing Symfony. Deliverables include the source code and deployed version of the site. Acceptance criteria focus on site functionality, usability, and responsiveness."
+            }
+        ]
+    }
+}
 }

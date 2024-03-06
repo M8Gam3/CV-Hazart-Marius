@@ -1,4 +1,5 @@
 {
+"fr" : {
     "username": "Marius Hazart",
     "banner": "./assets/img/profil/pp.webp",
     "school": "2ème année de Master à LA MANU, Établissement d'Enseignement Supérieur des Métiers du Numérique",
@@ -6,7 +7,7 @@
     "addresse": [
         {
             "name": "France",
-            "add": "Longueau/Amien"
+            "add": "Longueau/Amiens"
         },
         {
             "name": "Norvège",
@@ -25,4 +26,33 @@
             "img": "./assets/img/icons/uk.png"
         }
     ]
+},
+"en" : {
+    "username": "Marius Hazart",
+    "banner": "./assets/img/profil/pp.webp",
+    "school": "Second year of Master's Degree at LA MANU, Higher Education Institution of Digital Professions",
+    "work": "Aspiring Data Architect",
+    "addresse": [
+        {
+            "name": "France",
+            "add": "Longueau/Amiens"
+        },
+        {
+            "name": "Norway",
+            "add": "Oslo"
+        }
+    ],
+    "language": [
+        {
+            "name": "French",
+            "level": "Native",
+            "img": "./assets/img/icons/france.png"
+        },
+        {
+            "name": "English",
+            "level": "B1",
+            "img": "./assets/img/icons/uk.png"
+        }
+    ]
+}
 }

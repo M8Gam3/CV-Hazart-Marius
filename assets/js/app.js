@@ -484,6 +484,7 @@ Vue.component('profil-card', {
 var app = new Vue({
   el: '#app',
   data: {
+    language: "fr",
       json_files: {
           content: "./assets/data/content.json",
           portfolio: "./assets/data/portfolio.json",
@@ -570,6 +571,16 @@ var app = new Vue({
           this.branly = false;
           this.laManu1 = false;
           this.laManu2 = true;
+      },
+
+      changeLanguage(newLanguage) {
+        this.language = newLanguage;
+        // Re-fetch data for the new language
+        // this.fetchContentData();
+        // this.fetchPortfolioData();
+        // this.fetchProfilData();
+        // this.fetchSkillsData();
+        // this.fetchPresentationData();
       },
 
 

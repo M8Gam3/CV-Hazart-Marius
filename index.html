@@ -287,13 +287,13 @@
               </div>
               <div class="content-header-control">
                 <!-- content items -->
-                <div class="content-header-control-icon" style="display: none;">
+                <div class="content-header-control-icon" @click="changeLanguage('fr')">
                   <img
                     class="content-header-control-icon-img"
                     src="./assets/img/icons/france.png"
                   />
                 </div>
-                <div class="content-header-control-icon" style="display: none;">
+                <div class="content-header-control-icon" @click="changeLanguage('en')">
                   <img
                     class="content-header-control-icon-img"
                     src="./assets/img/icons/uk.png"
@@ -341,15 +341,15 @@
           <section v-if="section_one" class="content-container">
             <article class="home-content" v-if="home">
               <presentation-card
-                :username="presentation_data.username"
-                :school="presentation_data.school"
-                :work="presentation_data.work"
-                :address="presentation_data.addresse"
-                :language="presentation_data.language"
-                :banner="presentation_data.banner"
+                :username="presentation_data[language].username"
+                :school="presentation_data[language].school"
+                :work="presentation_data[language].work"
+                :address="presentation_data[language].addresse"
+                :language="presentation_data[language].language"
+                :banner="presentation_data[language].banner"
               >
               </presentation-card>
-              <content-card v-for="(value, key) in content_data" 
+              <content-card v-for="(value, key) in content_data[language]" 
                 :img="value.img" 
                 :banner="value.banner"
                 :date="value.date"
@@ -366,7 +366,7 @@
                 </icons-card>
               </div>
               <div class="skills-content-frame">
-                <portfolio-card v-for="(value, key) in (portfolio_data.experience)"
+                <portfolio-card v-for="(value, key) in (portfolio_data[language].experience)"
                   :name="value.name"
                   :img="value.img"
                   :link="value.link"
@@ -382,7 +382,7 @@
           <section v-if="section_two" class="content-container">
 
             <article class="portfolio-content" v-if="branly">
-              <portfolio-card v-for="(value, key) in (portfolio_data.portfolio).branly" 
+              <portfolio-card v-for="(value, key) in (portfolio_data[language].portfolio).branly" 
                 :name="value.name"
                 :img="value.img"
                 :link="value.link"
@@ -392,7 +392,7 @@
             </article>
 
             <article class="portfolio-content" v-if="laManu1">
-              <portfolio-card v-for="(value, key) in (portfolio_data.portfolio).lamanu1" 
+              <portfolio-card v-for="(value, key) in (portfolio_data[language].portfolio).lamanu1" 
                 :name="value.name"
                 :img="value.img"
                 :link="value.link"
@@ -402,7 +402,7 @@
             </article>
 
             <article class="portfolio-content" v-if="laManu2">
-              <portfolio-card v-for="(value, key) in (portfolio_data.portfolio).lamanu2" 
+              <portfolio-card v-for="(value, key) in (portfolio_data[language].portfolio).lamanu2" 
                 :name="value.name"
                 :img="value.img"
                 :link="value.link"
