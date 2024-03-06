@@ -424,7 +424,7 @@ Vue.component('profil-card', {
     </div>
     <div class="home-card-content">
       <div class="home-card-item">
-        <div class="home-card-item-tittle">Profil.</div>
+        <div class="home-card-item-tittle">Profil</div>
         <div class="home-card-item-text">
           <div class="home-card-item-text-p">{{work}}</div>
           <div class="home-card-item-text-p">
