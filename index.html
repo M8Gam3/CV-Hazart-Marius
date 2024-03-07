@@ -120,7 +120,7 @@
                     <img class="sidebar-item-img" src="./assets/img/icons/menu.jpg" />
                   </div>
                   <div class="sidebar-item-content">
-                    <div class="sidebar-item-text">Accueil</div>
+                    <div class="sidebar-item-text">{{ language === 'fr' ? 'Profil' : 'Profile' }}</div>
                   </div>
                 </div>
 
@@ -129,7 +129,7 @@
                     <img class="sidebar-item-img" src="./assets/img/icons/skills.jpg" />
                   </div>
                   <div class="sidebar-item-content">
-                    <div class="sidebar-item-text">Experience</div>
+                    <div class="sidebar-item-text">{{ language === 'fr' ? 'Expérience' : 'Experience' }}</div>
                   </div>
                 </div>
                   <!-- sidebar items -->
@@ -145,7 +145,7 @@
                   <img class="sidebar-item-img" src="./assets/img/content/branly.png" />
                 </div>
                 <div class="sidebar-item-content">
-                  <div class="sidebar-item-text">Branly</div>
+                  <div class="sidebar-item-text">{{ language === 'fr' ? 'Lycée' : 'High School' }}</div>
                 </div>
               </div>
 
@@ -154,7 +154,7 @@
                   <img class="sidebar-item-img" src="./assets/img/content/la-manu.png" />
                 </div>
                 <div class="sidebar-item-content">
-                  <div class="sidebar-item-text">1re année a LA MANU</div>
+                  <div class="sidebar-item-text">{{ language === 'fr' ? '1ère année de Master' : '1st year of Master' }}</div>
                 </div>
               </div>
 
@@ -163,7 +163,7 @@
                   <img class="sidebar-item-img" src="./assets/img/content/la-manu-2.png" />
                 </div>
                 <div class="sidebar-item-content">
-                  <div class="sidebar-item-text">2ème année a LA MANU</div>
+                  <div class="sidebar-item-text">{{ language === 'fr' ? '2ème année de Master' : '2nd year of Master' }}</div>
                 </div>
               </div>
                 <!-- sidebar items -->
@@ -276,13 +276,13 @@
 
 
                 <div class="content-header-page-content" v-if="section_one">
-                  <div v-if="home">Profil</div>
-                  <div v-else-if="experience">Experience</div>
+                  <div v-if="home">{{ language === 'fr' ? 'Profil' : 'Profile' }}</div>
+                  <div v-else-if="experience">{{ language === 'fr' ? 'Expérience' : 'Experience' }}</div>
                 </div>
                 <div class="content-header-page-content" v-else-if="section_two">
-                  <div v-if="branly">Branly</div>
-                  <div v-else-if="laManu1" class="content-header-page-content">1re année a LA MANU</div>
-                  <div v-else-if="laManu2" class="content-header-page-content">2ème année a LA MANU</div>
+                  <div v-if="branly">{{ language === 'fr' ? 'Lycée' : 'High School' }}</div>
+                  <div v-else-if="laManu1" class="content-header-page-content">{{ language === 'fr' ? '1ère année de Master' : '1st year of Master' }}</div>
+                  <div v-else-if="laManu2" class="content-header-page-content">{{ language === 'fr' ? '2ème année de Master' : '2nd year of Master' }}</div>
                 </div>
               </div>
               <div class="content-header-control">
@@ -347,6 +347,7 @@
                 :address="presentation_data[language].addresse"
                 :language="presentation_data[language].language"
                 :banner="presentation_data[language].banner"
+                :trad="language"
               >
               </presentation-card>
               <content-card v-for="(value, key) in content_data[language]" 
@@ -361,7 +362,7 @@
 
             <article class="skills-content" v-if="experience">
               <div class="skills-content-frame">
-                <icons-card v-for="(categorySkills, categoryName) in skills_data" :key="categoryName" :name="categoryName" :url="categorySkills.img">
+                <icons-card v-for="(categorySkills, categoryName) in skills_data[language]" :key="categoryName" :name="categoryName" :url="categorySkills.img">
                   <icon-card-skill v-for="item in categorySkills.content" :url="item.img" :key="item.name">{{skills_data}}</icon-card-skill>
                 </icons-card>
               </div>

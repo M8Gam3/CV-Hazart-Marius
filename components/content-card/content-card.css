@@ -179,12 +179,17 @@
   height: 10.9375rem;
   position: relative;
   overflow: hidden;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 .card-content-banner-img {
   align-self: stretch;
   flex: 1;
   position: relative;
-  object-fit: cover;
+  object-fit: cover center;
+  width: 100%;
+  
 }
 .card-content-footer {
   display: flex;

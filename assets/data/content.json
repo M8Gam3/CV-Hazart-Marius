@@ -2,7 +2,7 @@
 "fr" : {
     "Profil" : {
         "img": "./assets/img/profil/pp-discord.jpg",
-        "banner": "./assets/img/profil/pp-discord.webp",
+        "banner": "./assets/img/profil/pp.jpg",
         "date": "now",
         "color": "color-2",
         "title1": "Aspirant architecte-data",
@@ -27,8 +27,8 @@
 },
 "en" : {
     "Profile": {
-        "img": "./assets/img/profile/pp-discord.jpg",
-        "banner": "./assets/img/profile/pp-discord.webp",
+        "img": "./assets/img/profil/pp-discord.jpg",
+        "banner": "./assets/img/profil/pp.jpg",
         "date": "now",
         "color": "color-2",
         "title1": "Aspiring Data Architect",

@@ -360,59 +360,6 @@ Vue.component('profil-card', {
     props: ['img', 'banner', 'date', 'color', 'title1', 'text1'],
   });
 
-
-  Vue.component('presentation-card', {
-    template:   `
-      <div class="presentation-card">
-        <div class="presentation-card-header">
-          <div class="presentation-card-background"></div>
-          <div class="presentation-card-banner">
-            <img
-              class="presentation-card-banner-img"
-              src="presentation-card-banner-img0.png"
-            />
-          </div>
-        </div>
-        <div class="presentation-card-content">
-          <div class="presentation-card-content-container">
-            <div class="presentation-card-frame-1">
-              <div class="presentation-card-frame-1-title">Lorem ipsum</div>
-              <div class="presentation-card-frame-1-content">
-                <div class="presentation-card-frame-1-content-text">Description</div>
-              </div>
-            </div>
-            <div class="presentation-card-frame-2">
-              <div class="presentation-card-frame-2-item">
-                <div class="presentation-card-frame-2-item-icon">
-                  <img
-                    class="presentation-card-frame-2-item-icon-img"
-                    src="presentation-card-frame-2-item-icon-img0.png"
-                  />
-                </div>
-                <div class="presentation-card-frame-2-item-text">
-                  Francais : Langue maternelle
-                </div>
-              </div>
-              <div class="presentation-card-frame-22">
-                <div class="presentation-card-frame-2-item-icon">
-                  <img
-                    class="presentation-card-frame-2-item-icon-img"
-                    src="presentation-card-frame-2-item-icon-img1.png"
-                  />
-                </div>
-                <div class="presentation-card-frame-2-item-text">
-                  Anglais : Niveau B1
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    `,
-      props: ['level', 'name', 'progresscolor'],
-  });
-
-
   Vue.component('presentation-card', {
     template:   `
     <div class="home-card">
@@ -424,7 +371,7 @@ Vue.component('profil-card', {
     </div>
     <div class="home-card-content">
       <div class="home-card-item">
-        <div class="home-card-item-tittle">Profil</div>
+        <div class="home-card-item-tittle">{{ trad === 'fr' ? 'Profil' : 'Profile' }}</div>
         <div class="home-card-item-text">
           <div class="home-card-item-text-p">{{work}}</div>
           <div class="home-card-item-text-p">
@@ -434,7 +381,7 @@ Vue.component('profil-card', {
       </div>
       <div class="home-card-items">
         <div class="home-card-item2">
-          <div class="home-card-item-tittle">Address</div>
+          <div class="home-card-item-tittle">{{ trad === 'fr' ? 'Addresse' : 'Address' }}</div>
           <div class="home-card-item-text">
 
             <div class="home-card-item-text-p" v-for="value in address">
@@ -444,7 +391,7 @@ Vue.component('profil-card', {
           </div>
         </div>
         <div class="home-card-item2">
-          <div class="home-card-item-tittle">Langues</div>
+          <div class="home-card-item-tittle">{{ trad === 'fr' ? 'Langues' : 'Languages' }}</div>
           <div class="home-card-item-text">
 
             <div class="home-card-item-text-frame" v-for="value in language">
@@ -466,7 +413,7 @@ Vue.component('profil-card', {
     </div>
   </div>  
     `,
-      props: ['username', 'school', 'work', 'address', 'language', 'banner'],
+      props: ['username', 'school', 'work', 'address', 'language', 'banner', 'trad'],
   });
 
 // function fetchData(url) {
