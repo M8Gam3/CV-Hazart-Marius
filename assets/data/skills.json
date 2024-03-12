@@ -56,7 +56,7 @@
             },
             {
                 "name" : "Java",
-                "img" : "./assets/img/skills/Java-logo.png"
+                "img" : "./assets/img/skills/java-logo.png"
             },
             {
                 "name" : "Docker",
@@ -142,7 +142,7 @@
             },
             {
                 "name": "Java",
-                "img": "./assets/img/skills/Java-logo.png"
+                "img": "./assets/img/skills/java-logo.png"
             },
             {
                 "name": "Docker",
