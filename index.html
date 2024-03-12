@@ -140,6 +140,24 @@
 
               <div class="sidebar-row" v-else-if="section_two">
                 <!-- sidebar items -->
+                <div class="sidebar-item" v-on:click="navManu2">
+                  <div class="sidebar-item-icon">
+                    <img class="sidebar-item-img" src="./assets/img/content/la-manu-2.png" />
+                  </div>
+                  <div class="sidebar-item-content">
+                    <div class="sidebar-item-text">{{ language === 'fr' ? '2ème année de Master' : '2nd year of Master' }}</div>
+                  </div>
+                </div>
+
+                <div class="sidebar-item" v-on:click="navManu1">
+                  <div class="sidebar-item-icon">
+                    <img class="sidebar-item-img" src="./assets/img/content/la-manu.png" />
+                  </div>
+                  <div class="sidebar-item-content">
+                    <div class="sidebar-item-text">{{ language === 'fr' ? '1ère année de Master' : '1st year of Master' }}</div>
+                  </div>
+                </div>
+  
               <div class="sidebar-item" v-on:click="navBranly">
                 <div class="sidebar-item-icon">
                   <img class="sidebar-item-img" src="./assets/img/content/branly.png" />
@@ -149,25 +167,8 @@
                 </div>
               </div>
 
-              <div class="sidebar-item" v-on:click="navManu1">
-                <div class="sidebar-item-icon">
-                  <img class="sidebar-item-img" src="./assets/img/content/la-manu.png" />
-                </div>
-                <div class="sidebar-item-content">
-                  <div class="sidebar-item-text">{{ language === 'fr' ? '1ère année de Master' : '1st year of Master' }}</div>
-                </div>
-              </div>
-
-              <div class="sidebar-item" v-on:click="navManu2">
-                <div class="sidebar-item-icon">
-                  <img class="sidebar-item-img" src="./assets/img/content/la-manu-2.png" />
-                </div>
-                <div class="sidebar-item-content">
-                  <div class="sidebar-item-text">{{ language === 'fr' ? '2ème année de Master' : '2nd year of Master' }}</div>
-                </div>
-              </div>
                 <!-- sidebar items -->
-            </div>
+              </div>
 
 
 
