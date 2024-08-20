@@ -8,10 +8,6 @@
         {
             "name": "France",
             "add": "Longueau/Amiens"
-        },
-        {
-            "name": "Norvège",
-            "add": "Oslo"
         }
     ],
     "language": [
@@ -36,10 +32,6 @@
         {
             "name": "France",
             "add": "Longueau/Amiens"
-        },
-        {
-            "name": "Norway",
-            "add": "Oslo"
         }
     ],
     "language": [
