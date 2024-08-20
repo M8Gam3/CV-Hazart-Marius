@@ -174,7 +174,7 @@ Vue.component('profil-card', {
             </div>
           </div>
           <div class="portfolio-card-footer">
-            <a class="portfolio-card-footer-button" :href="link">
+            <a class="portfolio-card-footer-button" :href="link" target="_blank">
             <svg
               class="link"
               width="15"

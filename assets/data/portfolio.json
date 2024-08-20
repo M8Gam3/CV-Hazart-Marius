@@ -1,5 +1,11 @@
 { "fr" : {
     "experience" : {
+        "Boitmobile" : {
+            "name" : "Stage Boitmobile",
+            "img" : "./assets/img/portfolio/boitmobile.webp",
+            "link" : "https://github.com/M8Gam3/boitmobile",
+            "desc" : "Dans le cadre du projet Boitmobile, j'ai contribué au développement d'une application mobile innovante visant à optimiser la gestion des livraisons de colis. Mon rôle principal a consisté à intégrer une API de géolocalisation pour améliorer la précision des trajets et à implémenter une interface utilisateur intuitive en React Native. J'ai également travaillé sur l'optimisation des performances de l'application en réduisant les temps de chargement des données et en améliorant l'expérience utilisateur globale. Ce projet m'a permis de renforcer mes compétences en développement mobile et en intégration d'API."
+        },
         "Pinel" : {
             "name" : "Stage Chu Pinel, Amiens",
             "img" : "./assets/img/portfolio/chu-pinel.png",
@@ -8,12 +14,24 @@
         }
     },
     "portfolio" : {
-        "branly" : [
+        "lamanu2" : [
             {
-            "name" : "Addressage",
-            "img" : "./assets/img/portfolio/addressage-python.png",
-            "link" : "https://github.com/M8Gam3/addressage-python",
-            "desc" : "J'ai développé un programme en Python pour la gestion d'adresses IP, permettant de convertir une adresse en binaire, identifier sa classe, calculer le masque de sous-réseau, et afficher des informations essentielles. Ce projet a démontré ma maîtrise des adresses IP et de la programmation en Python."
+                "name" : "Evelyne",
+                "img" : "",
+                "link" : "https://github.com/M8Gam3/eval-lamanu-2/tree/evelyne-21",
+                "desc" : "Développeur Python expérimenté, spécialisé en manipulation et visualisation de données avec NumPy et Matplotlib. Capable de répondre aux exigences des projets et de collaborer efficacement en équipe. Maîtrise des solutions basées sur les données pour des résultats précis et significatifs."
+            },
+            {
+                "name" : "SaladBowl",
+                "img" : "",
+                "link" : "https://github.com/M8Gam3/Eval-salade-react",
+                "desc" : "J'ai utilisé ReactJS pour moderniser l'interactivité du site web. La méthodologie BEM a été appliquée pour maintenir une structure CSS claire et organisée. J'ai créé des composants React pour chaque élément du site HTML et intégré les données dynamiques à partir d'un fichier JSON pour générer les cartes du menu. Enfin, j'ai géré le projet avec Git pour versionner et partager le code de manière collaborative."
+            },
+            {
+                "name" : "Rhine-Lab Symfony",
+                "img" : "",
+                "link" : "https://github.com/M8Gam3/Rhine-Lab-symfony",
+                "desc" : "Ce projet implique la création d'un site web corporate avec Symfony. L'objectif est de présenter l'entreprise et ses services, tout en facilitant le contact avec les utilisateurs. Les spécifications incluent des pages d'accueil, \"À propos\", \"Service\" et \"Contact\" avec formulaire, avec l'utilisation de Symfony. Les livrables comprennent le code source et la version déployée du site. Les critères d'acceptation portent sur la fonctionnalité, l'ergonomie et la responsivité du site."
             }
         ],
         "lamanu1" : [
@@ -42,30 +60,24 @@
                 "desc" : "J'ai conçu et développé le site web ''La Caverne aux Info'' qui présente des articles de journaux de manière dynamique en utilisant PHP et MySQL. Ce projet a impliqué l'envoi de requêtes SQL à une API pour récupérer et afficher les articles, tout en utilisant un système de cookies pour personnaliser les préférences de l'utilisateur. Nous avons également mis en place un système de catégories pour organiser les sujets des articles, offrant ainsi une expérience d'actualités plus ciblée et personnalisée."
             }
         ],
-        "lamanu2" : [
+        "branly" : [
             {
-                "name" : "Evelyne",
-                "img" : "",
-                "link" : "https://github.com/M8Gam3/eval-lamanu-2/tree/evelyne-21",
-                "desc" : "Développeur Python expérimenté, spécialisé en manipulation et visualisation de données avec NumPy et Matplotlib. Capable de répondre aux exigences des projets et de collaborer efficacement en équipe. Maîtrise des solutions basées sur les données pour des résultats précis et significatifs."
-            },
-            {
-                "name" : "SaladBowl",
-                "img" : "",
-                "link" : "https://github.com/M8Gam3/Eval-salade-react",
-                "desc" : "J'ai utilisé ReactJS pour moderniser l'interactivité du site web. La méthodologie BEM a été appliquée pour maintenir une structure CSS claire et organisée. J'ai créé des composants React pour chaque élément du site HTML et intégré les données dynamiques à partir d'un fichier JSON pour générer les cartes du menu. Enfin, j'ai géré le projet avec Git pour versionner et partager le code de manière collaborative."
-            },
-            {
-                "name" : "Rhine-Lab Symfony",
-                "img" : "",
-                "link" : "https://github.com/M8Gam3/Rhine-Lab-symfony",
-                "desc" : "Ce projet implique la création d'un site web corporate avec Symfony. L'objectif est de présenter l'entreprise et ses services, tout en facilitant le contact avec les utilisateurs. Les spécifications incluent des pages d'accueil, \"À propos\", \"Service\" et \"Contact\" avec formulaire, avec l'utilisation de Symfony. Les livrables comprennent le code source et la version déployée du site. Les critères d'acceptation portent sur la fonctionnalité, l'ergonomie et la responsivité du site."
+            "name" : "Addressage",
+            "img" : "./assets/img/portfolio/addressage-python.png",
+            "link" : "https://github.com/M8Gam3/addressage-python",
+            "desc" : "J'ai développé un programme en Python pour la gestion d'adresses IP, permettant de convertir une adresse en binaire, identifier sa classe, calculer le masque de sous-réseau, et afficher des informations essentielles. Ce projet a démontré ma maîtrise des adresses IP et de la programmation en Python."
             }
         ]
     }
 },
 "en" : {
     "experience": {
+        "Boitmobile" : {
+            "name" : "Boitmobile internship",
+            "img" : "./assets/img/portfolio/boitmobile.webp",
+            "link" : "https://github.com/M8Gam3/boitmobile",
+            "desc" : "As part of the Boitmobile project, I contributed to the development of an innovative mobile application designed to optimize parcel delivery management. My primary role involved integrating a geolocation API to improve route accuracy and implementing an intuitive user interface using React Native. I also focused on optimizing the app's performance by reducing data loading times and enhancing the overall user experience. This project allowed me to strengthen my skills in mobile development and API integration."
+        },
         "Pinel": {
             "name": "Internship at Pinel Hospital, Amiens",
             "img": "./assets/img/portfolio/chu-pinel.png",
@@ -74,12 +86,24 @@
         }
     },
     "portfolio": {
-        "branly": [
+        "lamanu2": [
             {
-                "name": "IP Addressing",
-                "img": "./assets/img/portfolio/addressage-python.png",
-                "link": "https://github.com/M8Gam3/addressage-python",
-                "desc": "I developed a Python program for IP address management, allowing for converting an address to binary, identifying its class, calculating the subnet mask, and displaying essential information. This project demonstrated my mastery of IP addresses and Python programming."
+                "name": "Evelyne",
+                "img": "",
+                "link": "https://github.com/M8Gam3/eval-lamanu-2/tree/evelyne-21",
+                "desc": "Experienced Python developer, specializing in data manipulation and visualization with NumPy and Matplotlib. Capable of meeting project requirements and effectively collaborating in a team. Proficient in data-driven solutions for precise and meaningful results."
+            },
+            {
+                "name": "SaladBowl",
+                "img": "",
+                "link": "https://github.com/M8Gam3/Eval-salade-react",
+                "desc": "I used ReactJS to modernize the interactivity of the website. The BEM methodology was applied to maintain a clear and organized CSS structure. I created React components for each HTML element of the site and integrated dynamic data from a JSON file to generate menu cards. Finally, I managed the project with Git for collaborative versioning and sharing of code."
+            },
+            {
+                "name": "Rhine-Lab Symfony",
+                "img": "",
+                "link": "https://github.com/M8Gam3/Rhine-Lab-symfony",
+                "desc": "This project involves creating a corporate website with Symfony. The objective is to present the company and its services while facilitating contact with users. Specifications include home, 'About', 'Service', and 'Contact' pages with a form, utilizing Symfony. Deliverables include the source code and deployed version of the site. Acceptance criteria focus on site functionality, usability, and responsiveness."
             }
         ],
         "lamanu1": [
@@ -108,24 +132,12 @@
                 "desc": "I designed and developed the website 'The News Cave,' which dynamically presents newspaper articles using PHP and MySQL. This project involved sending SQL queries to an API to retrieve and display articles, while using a cookie system to personalize user preferences. We also implemented a category system to organize article topics, offering a more targeted and personalized news experience."
             }
         ],
-        "lamanu2": [
+        "branly": [
             {
-                "name": "Evelyne",
-                "img": "",
-                "link": "https://github.com/M8Gam3/eval-lamanu-2/tree/evelyne-21",
-                "desc": "Experienced Python developer, specializing in data manipulation and visualization with NumPy and Matplotlib. Capable of meeting project requirements and effectively collaborating in a team. Proficient in data-driven solutions for precise and meaningful results."
-            },
-            {
-                "name": "SaladBowl",
-                "img": "",
-                "link": "https://github.com/M8Gam3/Eval-salade-react",
-                "desc": "I used ReactJS to modernize the interactivity of the website. The BEM methodology was applied to maintain a clear and organized CSS structure. I created React components for each HTML element of the site and integrated dynamic data from a JSON file to generate menu cards. Finally, I managed the project with Git for collaborative versioning and sharing of code."
-            },
-            {
-                "name": "Rhine-Lab Symfony",
-                "img": "",
-                "link": "https://github.com/M8Gam3/Rhine-Lab-symfony",
-                "desc": "This project involves creating a corporate website with Symfony. The objective is to present the company and its services while facilitating contact with users. Specifications include home, 'About', 'Service', and 'Contact' pages with a form, utilizing Symfony. Deliverables include the source code and deployed version of the site. Acceptance criteria focus on site functionality, usability, and responsiveness."
+                "name": "IP Addressing",
+                "img": "./assets/img/portfolio/addressage-python.png",
+                "link": "https://github.com/M8Gam3/addressage-python",
+                "desc": "I developed a Python program for IP address management, allowing for converting an address to binary, identifying its class, calculating the subnet mask, and displaying essential information. This project demonstrated my mastery of IP addresses and Python programming."
             }
         ]
     }
