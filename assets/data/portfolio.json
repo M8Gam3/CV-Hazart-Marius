@@ -1,7 +1,7 @@
 { "fr" : {
     "experience" : {
         "Boitmobile" : {
-            "name" : "Stage Boitmobile",
+            "name" : "Stage Boitmobile | 24/06/2024 - 16/08/2024",
             "img" : "./assets/img/portfolio/boitmobile.webp",
             "link" : "https://github.com/M8Gam3/boitmobile",
             "desc" : "Dans le cadre du projet Boitmobile, j'ai contribué au développement d'une application mobile innovante visant à optimiser la gestion des livraisons de colis. Mon rôle principal a consisté à intégrer une API de géolocalisation pour améliorer la précision des trajets et à implémenter une interface utilisateur intuitive en React Native. J'ai également travaillé sur l'optimisation des performances de l'application en réduisant les temps de chargement des données et en améliorant l'expérience utilisateur globale. Ce projet m'a permis de renforcer mes compétences en développement mobile et en intégration d'API."
@@ -73,7 +73,7 @@
 "en" : {
     "experience": {
         "Boitmobile" : {
-            "name" : "Boitmobile internship",
+            "name" : "Boitmobile internship | 24/06/2024 - 16/08/2024",
             "img" : "./assets/img/portfolio/boitmobile.webp",
             "link" : "https://github.com/M8Gam3/boitmobile",
             "desc" : "As part of the Boitmobile project, I contributed to the development of an innovative mobile application designed to optimize parcel delivery management. My primary role involved integrating a geolocation API to improve route accuracy and implementing an intuitive user interface using React Native. I also focused on optimizing the app's performance by reducing data loading times and enhancing the overall user experience. This project allowed me to strengthen my skills in mobile development and API integration."
