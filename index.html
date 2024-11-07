@@ -145,7 +145,7 @@
                     <img class="sidebar-item-img" src="./assets/img/content/la-manu-2.png" />
                   </div>
                   <div class="sidebar-item-content">
-                    <div class="sidebar-item-text">{{ language === 'fr' ? '2ème année de Master' : '2nd year of Master' }}</div>
+                    <div class="sidebar-item-text">{{ language === 'fr' ? '2ème année de Bachelor Chef de projet Data/IA' : '2nd year of Master' }}</div>
                   </div>
                 </div>
 
@@ -282,8 +282,8 @@
                 </div>
                 <div class="content-header-page-content" v-else-if="section_two">
                   <div v-if="branly">{{ language === 'fr' ? 'Lycée' : 'High School' }}</div>
-                  <div v-else-if="laManu1" class="content-header-page-content">{{ language === 'fr' ? '1ère année de Master' : '1st year of Master' }}</div>
-                  <div v-else-if="laManu2" class="content-header-page-content">{{ language === 'fr' ? '2ème année de Master' : '2nd year of Master' }}</div>
+                  <div v-else-if="laManu1" class="content-header-page-content">{{ language === 'fr' ? '1ère année de Bachelor' : '1st year of Bachelor' }}</div>
+                  <div v-else-if="laManu2" class="content-header-page-content">{{ language === 'fr' ? '2ème année de Bachelor Chef de projet Data/IA' : '2nd year of Master' }}</div>
                 </div>
               </div>
               <div class="content-header-control">
@@ -345,7 +345,7 @@
                 :username="presentation_data[language].username"
                 :school="presentation_data[language].school"
                 :work="presentation_data[language].work"
-                :address="presentation_data[language].addresse"
+                :address="presentation_data[language].other"
                 :language="presentation_data[language].language"
                 :banner="presentation_data[language].banner"
                 :trad="language"

@@ -2,18 +2,26 @@
 "fr" : {
     "username": "Marius Hazart",
     "banner": "./assets/img/profil/pp.webp",
-    "school": "2ème année de Master à LA MANU, Établissement d'Enseignement Supérieur des Métiers du Numérique",
-    "work": "Aspirant Architecte Data",
-    "addresse": [
+    "school": "3ème de Bachelor à LA MANU, Établissement d'Enseignement Supérieur des Métiers du Numérique",
+    "work": "Recherche Alternance développeur web (3 semaines entreprise / 1 semaine formation)",
+    "other": [
         {
-            "name": "France",
+            "name": "Addresse",
             "add": "Longueau/Amiens"
+        },
+        {
+            "name": "Date de naissance",
+            "add": "13/09/2004"
+        },
+        {
+            "name": "Statut",
+            "add": "RQTH"
         }
     ],
     "language": [
         {
             "name": "Francais",
-            "level": "Maternelle",
+            "level": "Langue Native",
             "img": "./assets/img/icons/france.png"
         },
         {
@@ -26,12 +34,20 @@
 "en" : {
     "username": "Marius Hazart",
     "banner": "./assets/img/profil/pp.webp",
-    "school": "Second year of Master's Degree at LA MANU, Higher Education Institution of Digital Professions",
-    "work": "Aspiring Data Architect",
-    "addresse": [
+    "school": "Third year of Bachelor Degree at LA MANU, Higher Education Institution of Digital Professions",
+    "work": "Search for web developer apprenticeship (3 weeks company / 1 week training)",
+    "other": [
         {
-            "name": "France",
+            "name": "Address",
             "add": "Longueau/Amiens"
+        },
+        {
+            "name": "Birthdate",
+            "add": "13/09/2004"
+        },
+        {
+            "name": "Status",
+            "add": "RQTH"
         }
     ],
     "language": [

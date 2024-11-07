@@ -381,7 +381,7 @@ Vue.component('profil-card', {
       </div>
       <div class="home-card-items">
         <div class="home-card-item2">
-          <div class="home-card-item-tittle">{{ trad === 'fr' ? 'Addresse' : 'Address' }}</div>
+          <div class="home-card-item-tittle">{{ trad === 'fr' ? 'Autre' : 'Other' }}</div>
           <div class="home-card-item-text">
 
             <div class="home-card-item-text-p" v-for="value in address">

@@ -5,7 +5,7 @@
         "banner": "./assets/img/profil/pp.jpg",
         "date": "now",
         "color": "color-2",
-        "title1": "Aspirant architecte-data",
+        "title1": "Recherche Alternance développeur web",
         "text1": "Je suis un développeur principalement orienté back-end passionné d’algorithmie. Mon expertise repose sur la conception, le développement, et la maintenance de l'infrastructure serveur, ainsi que sur la gestion efficace des bases de données. Mon objectif est de fournir des solutions technologiques efficaces qui améliorent les performances et l'évolutivité des applications"
     },
     "LaManu" : {
@@ -13,8 +13,8 @@
         "banner": "./assets/img/content/la-manu-2.png",
         "date": "2024",
         "color": "color-1",
-        "title1": "Deuxième année de Master en Métiers du Numérique",
-        "text1": "Je suis actuellement en deuxième annéee de formation à La Manu, où je poursuis un Master en Métiers du Numérique. Au cours de cette formation, j'ai acquis des compétences essentielles en développement, notamment en JavaScript (JS), Vue.js, PHP, Python, Java, ainsi que Symfony pour le développement web. J'ai également développé des compétences en gestion de bases de données MySQL, en PAO (Publication Assistée par Ordinateur), en UX/UI (Expérience Utilisateur/Interface Utilisateur), et en langages web tels qu'HTML et CSS."
+        "title1": "Troisième année de Bachelor chef de projet Data/IA",
+        "text1": "Je suis actuellement en troisième annéee de formation à La Manu, où je poursuis un Bachelore chef de projet Data/IA. Au cours de cette formation, j'ai acquis des compétences essentielles en développement, notamment en JavaScript (JS), Vue.js, PHP, Python, Java, ainsi que Symfony pour le développement web. J'ai également développé des compétences en gestion de bases de données MySQL, en PAO (Publication Assistée par Ordinateur), en UX/UI (Expérience Utilisateur/Interface Utilisateur), et en langages algorithmiques ainsi que web."
     },
     "STI2D" : {
         "img": "./assets/img/content/branly.png",
@@ -31,7 +31,7 @@
         "banner": "./assets/img/profil/pp.jpg",
         "date": "now",
         "color": "color-2",
-        "title1": "Aspiring Data Architect",
+        "title1": "Search for web developer apprenticeship",
         "text1": "I am a developer primarily focused on backend development with a passion for algorithms. My expertise lies in designing, developing, and maintaining server infrastructure, as well as efficiently managing databases. My goal is to provide effective technological solutions that enhance the performance and scalability of applications."
     },
     "LaManu": {
@@ -39,8 +39,8 @@
         "banner": "./assets/img/content/la-manu-2.png",
         "date": "2024",
         "color": "color-1",
-        "title1": "Second year of Master's Degree in Digital Professions",
-        "text1": "I am currently in my second year of training at La Manu, where I am pursuing a Master's Degree in Digital Professions. During this program, I have acquired essential development skills, including JavaScript (JS), Vue.js, PHP, Python, Java, as well as Symfony for web development. I have also developed skills in MySQL database management, desktop publishing (DTP), UX/UI (User Experience/User Interface), and web languages such as HTML and CSS."
+        "title1": "Third year of Bachelor Data/AI project manager",
+        "text1": "I am currently in my third year of training at La Manu, where I am pursuing a Bachelor in Data/AI project manager. During this training, I acquired essential development skills, notably in JavaScript (JS), Vue.js, PHP, Python, Java, as well as Symfony for web development. I also developed skills in MySQL database management, DTP (Computer Aided Publication), UX/UI (User Experience/User Interface), and algorithmic and web languages."
     },
     "STI2D": {
         "img": "./assets/img/content/branly.png",
